@@ -1,5 +1,6 @@
 package com.example.trabajowordle;
 
+import com.example.conexion.Conector;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,6 +19,8 @@ public class Wordle extends Application {
     }
 
     public static void main(String[] args) {
+        Conector cn = Conector.getInstancia();
+        cn.connect();
         launch();
     }
 
