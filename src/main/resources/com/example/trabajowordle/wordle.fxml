@@ -1,16 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.trabajowordle.WordleController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<VBox blendMode="ADD" disable="true" fillWidth="false" focusTraversable="true" prefHeight="469.0" prefWidth="697.0" snapToPixel="false" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trabajowordle.WordleController">
+   <children>
+      <Pane prefHeight="489.0" prefWidth="835.0">
+         <children>
+            <TextField layoutX="37.0" layoutY="41.0" prefHeight="48.0" prefWidth="94.0" />
+            <TextField layoutX="154.0" layoutY="41.0" prefHeight="48.0" prefWidth="94.0" />
+            <TextField layoutX="392.0" layoutY="41.0" prefHeight="48.0" prefWidth="94.0" />
+            <TextField layoutX="274.0" layoutY="42.0" prefHeight="48.0" prefWidth="94.0" />
+            <TextField layoutX="513.0" layoutY="41.0" prefHeight="48.0" prefWidth="94.0" />
+            <Button layoutX="58.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="Q" />
+            <Button layoutX="109.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="W" />
+            <Button layoutX="160.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="E" />
+            <Button layoutX="211.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="R" />
+            <Button layoutX="263.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="T" />
+            <Button layoutX="315.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="Y" />
+            <Button layoutX="160.0" layoutY="254.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="C" />
+            <Button layoutX="366.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="U" />
+            <Button layoutX="418.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="I" />
+            <Button layoutX="469.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="O" />
+            <Button layoutX="109.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="S" />
+            <Button layoutX="160.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="D" />
+            <Button layoutX="211.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="F" />
+            <Button layoutX="58.0" layoutY="253.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="Z" />
+            <Button layoutX="58.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="A" />
+            <Button layoutX="263.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="G" />
+            <Button layoutX="366.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="J" />
+            <Button layoutX="417.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="K" />
+            <Button layoutX="469.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="L" />
+            <Button layoutX="314.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="H" />
+            <Button layoutX="418.0" layoutY="253.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="102.0" text="`BORRAR" />
+            <Button layoutX="109.0" layoutY="254.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="X" />
+            <Button layoutX="211.0" layoutY="254.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="V" />
+            <Button layoutX="263.0" layoutY="254.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="B" />
+            <Button layoutX="315.0" layoutY="253.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="N" />
+            <Button layoutX="367.0" layoutY="253.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="M" />
+            <Button layoutX="520.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="P" />
+            <Button layoutX="520.0" layoutY="210.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="Ñ" />
+         </children>
+      </Pane>
+   </children>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
 </VBox>
