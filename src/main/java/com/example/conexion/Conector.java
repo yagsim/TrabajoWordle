@@ -2,6 +2,7 @@ package com.example.conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -38,6 +39,17 @@ public class Conector {
     }
 
     public void vertirStringaBD(String datos)  {
+        try {
+            String [] array = datos.split(" ");
+            PreparedStatement st;
+            for (int i = 0; i < array.length; i++) {
+                st = connect.prepareStatement("insert into palabras (nombre) values((?))");
+                st.setString(1, array[i]);
+                st.execute();
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
