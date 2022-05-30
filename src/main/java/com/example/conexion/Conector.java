@@ -1,9 +1,8 @@
 package com.example.conexion;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -51,5 +50,35 @@ public class Conector {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public ArrayList<String> select(){
+        ArrayList<String> palabras = new ArrayList<>();
+        ResultSet result;
+        try {
+            PreparedStatement st=connect.prepareStatement("select nombre from palabras");
+            result=st.executeQuery();
+            int cont=0;
+
+            while(result.next()){
+                palabras.add(result.getString("nombre"));
+                cont++;
+            }
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return palabras;
+    }
+
+    public void aleatorio(){
+        ArrayList<String> palabras=new ArrayList<>();
+        Random ran = new Random();
+
+        int randomitem = ran.nextInt(palabras.size());
+        String randomElement = palabras.get(randomitem);
+
     }
 }
