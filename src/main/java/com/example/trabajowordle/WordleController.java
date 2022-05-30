@@ -1,9 +1,6 @@
 package com.example.trabajowordle;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
@@ -38,7 +35,6 @@ public class WordleController {
     public TextField text_6_3;
     public TextField text_6_4;
     public TextField text_6_5;
-    public Button btn_Q;
     public Pane pane;
 
     public void typeTextF1_1() {
@@ -156,7 +152,5 @@ public class WordleController {
     public void typeTextF6_5() {
         text_6_5.setText(text_6_5.getText().toUpperCase());
     }
-    public void typebtn_Q() {
-        btn_Q.setText("Q");
-    }
+
 }

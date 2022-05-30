@@ -47,7 +47,6 @@ public class Conector {
                 st.setString(1, array[i]);
                 st.execute();
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
