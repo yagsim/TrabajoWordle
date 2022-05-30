@@ -27,41 +27,46 @@ public class Funciones {
             tf4.requestFocus();
             JOptionPane.showMessageDialog(null,"ESTA PALABRA NO EXISTE EN LA BASE DE DATOS");
         } else {
+            tf1.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");
+            tf2.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");
+            tf3.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");
+            tf4.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");
+            tf5.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");
             if (aleatoria.equals(test)) {
-                tf1.setStyle("-fx-background-color: #0af60a;");
-                tf2.setStyle("-fx-background-color: #0af60a;");
-                tf3.setStyle("-fx-background-color: #0af60a;");
-                tf4.setStyle("-fx-background-color: #0af60a;");
-                tf5.setStyle("-fx-background-color: #0af60a;");
+                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                tf2.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                tf3.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                tf4.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                tf5.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
             } else {
                 if (aleatoria.charAt(0) == tf1.getText().charAt(0)) {
-                    tf1.setStyle("-fx-background-color: #0af60a;");
+                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                 } else if (aleatoria.contains(("" + tf1.getText().charAt(0)))) {
-                    tf1.setStyle("-fx-background-color: #ffe12b;");
+                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                 }
 
                 if (aleatoria.charAt(1) == tf2.getText().charAt(0)) {
-                    tf2.setStyle("-fx-background-color: #0af60a;");
+                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                 } else if (aleatoria.contains(("" + tf2.getText().charAt(0)))) {
-                    tf2.setStyle("-fx-background-color: #ffe12b;");
+                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                 }
 
                 if (aleatoria.charAt(2) == tf3.getText().charAt(0)) {
-                    tf3.setStyle("-fx-background-color: #0af60a;");
+                    tf3.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                 } else if (aleatoria.contains(("" + tf3.getText().charAt(0)))) {
-                    tf3.setStyle("-fx-background-color: #ffe12b;");
+                    tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                 }
 
                 if (aleatoria.charAt(3) == tf4.getText().charAt(0)) {
-                    tf4.setStyle("-fx-background-color: #0af60a;");
+                    tf4.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                 } else if (aleatoria.contains(("" + tf4.getText().charAt(0)))) {
-                    tf4.setStyle("-fx-background-color: #ffe12b;");
+                    tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                 }
 
                 if (aleatoria.charAt(4) == tf5.getText().charAt(0)) {
-                    tf5.setStyle("-fx-background-color: #0af60a;");
+                    tf5.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                 } else if (aleatoria.contains(("" + tf5.getText().charAt(0)))) {
-                    tf5.setStyle("-fx-background-color: #ffe12b;");
+                    tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                 }
             }
             tf1.setEditable(false);
