@@ -58,26 +58,14 @@ public class Conector {
         try {
             PreparedStatement st=connect.prepareStatement("select nombre from palabras");
             result=st.executeQuery();
-            int cont=0;
-
             while(result.next()){
                 palabras.add(result.getString("nombre"));
-                cont++;
             }
-
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return palabras;
     }
 
-    public void aleatorio(ArrayList<String> palabras){
-        Random ran = new Random();
 
-        int randomitem = ran.nextInt(palabras.size());
-        String randomElement = palabras.get(randomitem);
-        System.out.println(randomElement);
-    }
 }
