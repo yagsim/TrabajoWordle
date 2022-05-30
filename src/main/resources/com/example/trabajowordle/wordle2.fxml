@@ -28,7 +28,7 @@
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <Button layoutX="52.0" layoutY="438.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="Q" />
+                <Button fx:id="btn_Q" layoutX="52.0" layoutY="438.0" mnemonicParsing="false" onKeyReleased="#typebtn_Q" prefHeight="35.0" prefWidth="51.0" text="Q" />
                 <Button layoutX="101.0" layoutY="438.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="W" />
                 <Button layoutX="152.0" layoutY="438.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="E" />
                 <Button layoutX="202.0" layoutY="438.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="R" />
@@ -56,103 +56,103 @@
                 <Button layoutX="354.0" layoutY="562.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="M" />
                 <Button layoutX="508.0" layoutY="438.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="P" />
                 <Button layoutX="508.0" layoutY="501.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" text="Ñ" />
-                <TextField fx:id="text_2_1" alignment="CENTER" layoutX="37.0" layoutY="105.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_2_1" alignment="CENTER" layoutX="37.0" layoutY="105.0" onKeyReleased="#typeTextF2_1" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField fx:id="text_2_2" alignment="CENTER" layoutX="154.0" layoutY="105.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_2_2" alignment="CENTER" layoutX="154.0" layoutY="105.0" onKeyReleased="#typeTextF2_2" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField fx:id="text_2_3" alignment="CENTER" layoutX="274.0" layoutY="105.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_2_3" alignment="CENTER" layoutX="274.0" layoutY="105.0" onKeyReleased="#typeTextF2_3" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField fx:id="text_2_4" alignment="CENTER" layoutX="393.0" layoutY="105.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_2_4" alignment="CENTER" layoutX="393.0" layoutY="105.0" onKeyReleased="#typeTextF2_4" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField fx:id="text_2_5" alignment="CENTER" layoutX="513.0" layoutY="105.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_2_5" alignment="CENTER" layoutX="513.0" layoutY="105.0" onKeyReleased="#typeTextF2_5" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="39.0" layoutY="164.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_3_1" alignment="CENTER" layoutX="39.0" layoutY="164.0" onKeyReleased="#typeTextF3_1" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="152.0" layoutY="164.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_3_2" alignment="CENTER" layoutX="152.0" layoutY="164.0" onKeyReleased="#typeTextF3_2" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="276.0" layoutY="164.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_3_3" alignment="CENTER" layoutX="276.0" layoutY="164.0" onKeyReleased="#typeTextF3_3" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="393.0" layoutY="164.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_3_4" alignment="CENTER" layoutX="393.0" layoutY="164.0" onKeyReleased="#typeTextF3_4" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="513.0" layoutY="164.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_3_5" alignment="CENTER" layoutX="513.0" layoutY="164.0" onKeyReleased="#typeTextF3_5" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="39.0" layoutY="226.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_4_1" alignment="CENTER" layoutX="39.0" layoutY="232.0" onKeyReleased="#typeTextF4_1" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="152.0" layoutY="232.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_4_2" alignment="CENTER" layoutX="152.0" layoutY="232.0" onKeyReleased="#typeTextF4_2" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="277.0" layoutY="232.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_4_3" alignment="CENTER" layoutX="277.0" layoutY="232.0" onKeyReleased="#typeTextF4_3" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="393.0" layoutY="232.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_4_4" alignment="CENTER" layoutX="393.0" layoutY="232.0" onKeyReleased="#typeTextF4_4" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="513.0" layoutY="232.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_4_5" alignment="CENTER" layoutX="513.0" layoutY="232.0" onKeyReleased="#typeTextF4_5" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="39.0" layoutY="295.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_5_1" alignment="CENTER" layoutX="39.0" layoutY="295.0" onKeyReleased="#typeTextF5_1" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="152.0" layoutY="295.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_5_2" alignment="CENTER" layoutX="152.0" layoutY="295.0" onKeyReleased="#typeTextF5_2" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="277.0" layoutY="295.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_5_3" alignment="CENTER" layoutX="277.0" layoutY="295.0" onKeyReleased="#typeTextF5_3" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="393.0" layoutY="295.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_5_4" alignment="CENTER" layoutX="393.0" layoutY="295.0" onKeyReleased="#typeTextF5_4" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="513.0" layoutY="296.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_5_5" alignment="CENTER" layoutX="513.0" layoutY="296.0" onKeyReleased="#typeTextF5_5" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="39.0" layoutY="364.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_6_1" alignment="CENTER" layoutX="39.0" layoutY="364.0" onKeyReleased="#typeTextF6_1" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="154.0" layoutY="364.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_6_2" alignment="CENTER" layoutX="154.0" layoutY="364.0" onKeyReleased="#typeTextF6_2" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="277.0" layoutY="364.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_6_3" alignment="CENTER" layoutX="277.0" layoutY="364.0" onKeyReleased="#typeTextF6_3" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="393.0" layoutY="364.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_6_4" alignment="CENTER" layoutX="393.0" layoutY="364.0" onKeyReleased="#typeTextF6_4" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
-                <TextField alignment="CENTER" layoutX="513.0" layoutY="364.0" prefHeight="35.0" prefWidth="78.0">
+                <TextField fx:id="text_6_5" alignment="CENTER" layoutX="513.0" layoutY="364.0" onKeyReleased="#typeTextF6_5" prefHeight="35.0" prefWidth="78.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
