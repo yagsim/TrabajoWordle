@@ -8,10 +8,7 @@
     <children>
         <Pane fx:id="pane" prefHeight="617.0" prefWidth="623.0" style="-fx-background-color: #3b3b3b">
             <children>
-                <TextField fx:id="text_5_3" alignment="CENTER" layoutX="277.0" layoutY="295.0" onKeyReleased="#typeTextF5_3" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: C0C0C0FF;">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font></TextField>
+
                 <TextField fx:id="text_1_1" alignment="CENTER" layoutX="37.0" layoutY="41.0" onKeyReleased="#typeTextF1_1" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: C0C0C0FF;">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -100,6 +97,10 @@
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></TextField>
+                <TextField fx:id="text_5_3" alignment="CENTER" layoutX="277.0" layoutY="295.0" onKeyReleased="#typeTextF5_3" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: C0C0C0FF;">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></TextField>
                 <TextField fx:id="text_5_4" alignment="CENTER" layoutX="393.0" layoutY="295.0" onKeyReleased="#typeTextF5_4" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: C0C0C0FF;">
                <font>
                   <Font name="System Bold" size="18.0" />
