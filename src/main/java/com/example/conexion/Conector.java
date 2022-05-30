@@ -65,6 +65,21 @@ public class Conector {
         }
         return palabras;
     }
-
+    public boolean comprobar(String test){
+        try {
+            ResultSet result;
+            PreparedStatement st=connect.prepareStatement("select count(*)  as count from palabras where nombre=(?)");
+            st.setString(1,test);
+            result=st.executeQuery();
+            if(result.getInt("count")>0){
+                return true;
+            }else{
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
 }
