@@ -13,7 +13,7 @@ public class Wordle extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Wordle.class.getResource("wordle2.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 697, 834);
+        Scene scene = new Scene(fxmlLoader.load(), 697, 678);
         stage.setTitle("Wordle");
         stage.setScene(scene);
         stage.show();
