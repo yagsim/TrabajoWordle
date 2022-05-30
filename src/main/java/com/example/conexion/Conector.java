@@ -73,12 +73,11 @@ public class Conector {
         return palabras;
     }
 
-    public void aleatorio(){
-        ArrayList<String> palabras=new ArrayList<>();
+    public void aleatorio(ArrayList<String> palabras){
         Random ran = new Random();
 
         int randomitem = ran.nextInt(palabras.size());
         String randomElement = palabras.get(randomitem);
-
+        System.out.println(randomElement);
     }
 }

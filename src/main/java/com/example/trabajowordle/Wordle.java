@@ -21,6 +21,7 @@ public class Wordle extends Application {
     public static void main(String[] args) {
         Conector cn = Conector.getInstancia();
         cn.connect();
+        cn.aleatorio(cn.select());
         launch();
     }
 
