@@ -22,10 +22,10 @@ public class Funciones {
     public static void validar(String aleatoria, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
         String test = tf1.getText() + tf2.getText() + tf3.getText() + tf4.getText() + tf5.getText();
         System.out.println(aleatoria + "   " + test);
+        boolean foco = false;
         if (cn.comprobar(test)==false){
+            tf4.requestFocus();
             JOptionPane.showMessageDialog(null,"ESTA PALABRA NO EXISTE EN LA BASE DE DATOS");
-
-
         } else {
             if (aleatoria.equals(test)) {
                 tf1.setStyle("-fx-background-color: #0af60a;");

@@ -74,8 +74,8 @@ public class WordleController {
     }
     public void typeTextF1_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
-            Funciones.validar(Funciones.pAleatoria, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5);
             text_2_1.requestFocus();
+            Funciones.validar(Funciones.pAleatoria, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5);
         } else if (evt.getCode() == KeyCode.LEFT) {
             text_1_4.requestFocus();
         } else if (evt.getCode() != KeyCode.BACK_SPACE) {
@@ -115,8 +115,8 @@ public class WordleController {
     }
     public void typeTextF2_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
-            Funciones.validar(Funciones.pAleatoria, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5);
             text_3_1.requestFocus();
+            Funciones.validar(Funciones.pAleatoria, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5);
         } else if (evt.getCode() == KeyCode.LEFT) {
             text_2_4.requestFocus();
         } else if (evt.getCode() != KeyCode.BACK_SPACE) {
@@ -155,8 +155,8 @@ public class WordleController {
     }
     public void typeTextF3_5( KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
-            Funciones.validar(Funciones.pAleatoria, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5);
             text_4_1.requestFocus();
+            Funciones.validar(Funciones.pAleatoria, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5);
         } else if (evt.getCode() == KeyCode.LEFT) {
             text_3_4.requestFocus();
         } else if (evt.getCode() != KeyCode.BACK_SPACE) {
@@ -195,8 +195,8 @@ public class WordleController {
     }
     public void typeTextF4_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
-            Funciones.validar(Funciones.pAleatoria, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5);
             text_5_1.requestFocus();
+            Funciones.validar(Funciones.pAleatoria, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5);
         } else if (evt.getCode() == KeyCode.LEFT) {
             text_4_4.requestFocus();
         } else if (evt.getCode() != KeyCode.BACK_SPACE) {
@@ -236,8 +236,8 @@ public class WordleController {
     }
     public void typeTextF5_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
-            Funciones.validar(Funciones.pAleatoria, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5);
             text_6_1.requestFocus();
+            Funciones.validar(Funciones.pAleatoria, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5);
         } else if (evt.getCode() == KeyCode.LEFT) {
             text_5_4.requestFocus();
         } else if (evt.getCode() != KeyCode.BACK_SPACE) {
