@@ -42,6 +42,7 @@ public class WordleController {
     public TextField text_6_5;
     public Pane pane;
 
+
     public void typeTextF1_1(KeyEvent evt) {
         if ( evt.getCode()!=KeyCode.BACK_SPACE){
             text_1_1.setText(text_1_1.getText().toUpperCase());
