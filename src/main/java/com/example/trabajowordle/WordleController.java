@@ -2,7 +2,11 @@ package com.example.trabajowordle;
 
 
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
+
+
 
 public class WordleController {
     public TextField text_1_1;
@@ -37,25 +41,43 @@ public class WordleController {
     public TextField text_6_5;
     public Pane pane;
 
-    public void typeTextF1_1() {
-        text_1_1.setText(text_1_1.getText().toUpperCase());
-        text_1_2.requestFocus();
+    public void typeTextF1_1(KeyEvent evt) {
+        if ( evt.getCode()!=KeyCode.BACK_SPACE){
+            text_1_1.setText(text_1_1.getText().toUpperCase());
+            text_1_2.requestFocus();
+        }
     }
-    public void typeTextF1_2() {
-        text_1_2.setText(text_1_2.getText().toUpperCase());
-        text_1_3.requestFocus();
+    public void typeTextF1_2(KeyEvent evt) {
+        if ( evt.getCode() == KeyCode.LEFT) {
+            text_1_1.requestFocus();
+        }else if (evt.getCode() != KeyCode.BACK_SPACE) {
+               text_1_2.setText(text_1_2.getText().toUpperCase());
+               text_1_3.requestFocus();
+        }
     }
-    public void typeTextF1_3() {
-        text_1_3.setText(text_1_3.getText().toUpperCase());
-        text_1_4.requestFocus();
+    public void typeTextF1_3(KeyEvent evt) {
+        if (evt.getCode() == KeyCode.LEFT) {
+            text_1_2.requestFocus();
+        } else if (evt.getCode() != KeyCode.BACK_SPACE) {
+            text_1_3.setText(text_1_3.getText().toUpperCase());
+            text_1_4.requestFocus();
+        }
     }
-    public void typeTextF1_4() {
-        text_1_4.setText(text_1_4.getText().toUpperCase());
-        text_1_5.requestFocus();
+    public void typeTextF1_4(KeyEvent evt) {
+        if (evt.getCode() == KeyCode.LEFT) {
+            text_1_3.requestFocus();
+        } else if (evt.getCode() != KeyCode.BACK_SPACE) {
+            text_1_4.setText(text_1_4.getText().toUpperCase());
+            text_1_5.requestFocus();
+        }
     }
-    public void typeTextF1_5() {
-        text_1_5.setText(text_1_5.getText().toUpperCase());
-    }
+    public void typeTextF1_5(KeyEvent evt) {
+        if (evt.getCode() == KeyCode.LEFT) {
+            text_1_3.requestFocus();
+        } else if (evt.getCode() != KeyCode.BACK_SPACE) {
+            text_1_5.setText(text_1_5.getText().toUpperCase());
+        }
+        }
     public void typeTextF2_1() {
         text_2_1.setText(text_2_1.getText().toUpperCase());
         text_2_2.requestFocus();
