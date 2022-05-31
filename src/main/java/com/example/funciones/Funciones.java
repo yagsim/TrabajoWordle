@@ -89,11 +89,19 @@ public class Funciones {
                     }
                 }
 
-            if (aleatoria.charAt(2) == tf3.getText().charAt(0)) {
-                tf3.setStyle("-fx-background-color: #0af60a;");
-            } else if (aleatoria.contains((""+tf3.getText().charAt(0)))) {
-                tf3.setStyle("-fx-background-color: #ffe12b;");
-            }
+                if (aleatoria.charAt(2) == tf3.getText().charAt(0)) {
+                    tf3.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                } else if (aleatoria.contains(("" + tf3.getText().charAt(0)))) {
+                    if (letra3==letra4 || letra3==letra5) {
+                        if (aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5)
+                            tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                    }else if (letra3==letra1  || letra3==letra2 ) {
+                        if (cont1 > 1 || cont2 > 1)
+                            tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                    } else {
+                        tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                    }
+                }
 
                 if (aleatoria.charAt(3) == tf4.getText().charAt(0)) {
                     tf4.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
