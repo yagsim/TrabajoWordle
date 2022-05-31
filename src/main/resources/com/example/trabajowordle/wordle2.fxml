@@ -212,122 +212,122 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="r" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="R" GridPane.columnIndex="3">
+                      <Button fx:id="r" focusTraversable="false" mnemonicParsing="false" onMouseReleased="#btnR" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="R" GridPane.columnIndex="3">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="t" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="T" GridPane.columnIndex="4">
+                      <Button fx:id="t" focusTraversable="false" mnemonicParsing="false" onMouseReleased="#btnT" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="T" GridPane.columnIndex="4">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="y" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="Y" GridPane.columnIndex="5">
+                      <Button fx:id="y" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnY" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="Y" GridPane.columnIndex="5">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="u" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="U" GridPane.columnIndex="6">
+                      <Button fx:id="u" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnU" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="U" GridPane.columnIndex="6">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="i" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="I" GridPane.columnIndex="7">
+                      <Button fx:id="i" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnI" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="I" GridPane.columnIndex="7">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="o" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="O" GridPane.columnIndex="8">
+                      <Button fx:id="o" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnO" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="O" GridPane.columnIndex="8">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="p" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="P" GridPane.columnIndex="9">
+                      <Button fx:id="p" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnP" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="P" GridPane.columnIndex="9">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="a" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="A" GridPane.rowIndex="1">
+                      <Button fx:id="a" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnA" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="A" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="s" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="S" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <Button fx:id="s" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnS" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="S" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="d" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="D" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                      <Button fx:id="d" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnD" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="D" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="f" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="F" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                      <Button fx:id="f" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnF" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="F" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="g" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="G" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                      <Button fx:id="g" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnG" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="G" GridPane.columnIndex="4" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="h" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="H" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                      <Button fx:id="h" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnH" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="H" GridPane.columnIndex="5" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="j" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="J" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                      <Button fx:id="j" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnJ" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="J" GridPane.columnIndex="6" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="k" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="K" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                      <Button fx:id="k" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnK" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="K" GridPane.columnIndex="7" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="l" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="L" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                      <Button fx:id="l" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnL" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="L" GridPane.columnIndex="8" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="ñ" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="Ñ" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                      <Button fx:id="ñ" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnÑ" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="Ñ" GridPane.columnIndex="9" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="z" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="Z" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                      <Button fx:id="z" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnZ" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="Z" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="X" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="x">
+                      <Button focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnX" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="X" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="x">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="c" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="C" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                      <Button fx:id="c" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnC" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="C" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="v" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="V" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                      <Button fx:id="v" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnV" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="V" GridPane.columnIndex="4" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="b" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="B" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                      <Button fx:id="b" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnB" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="B" GridPane.columnIndex="5" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="n" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="N" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                      <Button fx:id="n" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnN" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="N" GridPane.columnIndex="6" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
-                      <Button fx:id="m" focusTraversable="false" mnemonicParsing="false" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="M" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                      <Button fx:id="m" focusTraversable="false" mnemonicParsing="false" onMousePressed="#btnM" prefHeight="48.0" prefWidth="43.0" style="-fx-background-color: d5d5ff;" text="M" GridPane.columnIndex="7" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>

@@ -397,265 +397,220 @@ public class WordleController {
     }
 
     public void btnQ(){
-        if (text_1_1.isFocused()) {
-            text_1_1.setText("Q");
-            text_1_2.requestFocus();
-        } else if (text_1_2.isFocused()) {
-            text_1_2.setText("Q");
-            text_1_3.requestFocus();
-        } else if (text_1_3.isFocused()) {
-            text_1_3.setText("Q");
-            text_1_4.requestFocus();
-        } else if (text_1_4.isFocused()) {
-            text_1_4.setText("Q");
-            text_1_5.requestFocus();
-        } else if (text_1_5.isFocused()) {
-            text_1_5.setText("Q");
-        } else if (text_2_1.isFocused()) {
-            text_2_1.setText("Q");
-            text_2_2.requestFocus();
-        } else if (text_2_2.isFocused()) {
-            text_2_2.setText("Q");
-            text_2_3.requestFocus();
-        } else if (text_2_3.isFocused()) {
-            text_2_3.setText("Q");
-            text_2_4.requestFocus();
-        } else if (text_2_4.isFocused()) {
-            text_2_4.setText("Q");
-            text_2_5.requestFocus();
-        } else if (text_2_5.isFocused()) {
-            text_2_5.setText("Q");
-        } else if (text_3_1.isFocused()) {
-            text_3_1.setText("Q");
-            text_3_2.requestFocus();
-        } else if (text_3_2.isFocused()) {
-            text_3_2.setText("Q");
-            text_3_3.requestFocus();
-        } else if (text_3_3.isFocused()) {
-            text_3_3.setText("Q");
-            text_3_4.requestFocus();
-        } else if (text_3_4.isFocused()) {
-            text_3_4.setText("Q");
-            text_3_5.requestFocus();
-        } else if (text_3_5.isFocused()) {
-            text_3_5.setText("Q");
-        } else if (text_4_1.isFocused()) {
-            text_4_1.setText("Q");
-            text_4_2.requestFocus();
-        } else if (text_4_2.isFocused()) {
-            text_4_2.setText("Q");
-            text_4_3.requestFocus();
-        } else if (text_4_3.isFocused()) {
-            text_4_3.setText("Q");
-            text_4_4.requestFocus();
-        } else if (text_4_4.isFocused()) {
-            text_4_4.setText("Q");
-            text_4_5.requestFocus();
-        } else if (text_4_5.isFocused()) {
-            text_4_5.setText("Q");
-        } else if (text_5_1.isFocused()) {
-            text_5_1.setText("Q");
-            text_5_2.requestFocus();
-        } else if (text_5_2.isFocused()) {
-            text_5_2.setText("Q");
-            text_5_3.requestFocus();
-        } else if (text_5_3.isFocused()) {
-            text_5_3.setText("Q");
-            text_5_4.requestFocus();
-        } else if (text_5_4.isFocused()) {
-            text_5_4.setText("Q");
-            text_5_5.requestFocus();
-        } else if (text_5_5.isFocused()) {
-            text_5_5.setText("Q");
-        } else if (text_6_1.isFocused()) {
-            text_6_1.setText("Q");
-            text_6_2.requestFocus();
-        } else if (text_6_2.isFocused()) {
-            text_6_2.setText("Q");
-            text_6_3.requestFocus();
-        } else if (text_6_3.isFocused()) {
-            text_6_3.setText("Q");
-            text_6_4.requestFocus();
-        } else if (text_6_4.isFocused()) {
-            text_6_4.setText("Q");
-            text_6_5.requestFocus();
-        } else if (text_6_5.isFocused()) {
-            text_6_5.setText("Q");
-        }
+        Funciones.botonTeclado("Q",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+
     }
     public void btnW(){
-        if (text_1_1.isFocused()) {
-            text_1_1.setText("W");
-            text_1_2.requestFocus();
-        } else if (text_1_2.isFocused()) {
-            text_1_2.setText("W");
-            text_1_3.requestFocus();
-        } else if (text_1_3.isFocused()) {
-            text_1_3.setText("W");
-            text_1_4.requestFocus();
-        } else if (text_1_4.isFocused()) {
-            text_1_4.setText("W");
-            text_1_5.requestFocus();
-        } else if (text_1_5.isFocused()) {
-            text_1_5.setText("W");
-        } else if (text_2_1.isFocused()) {
-            text_2_1.setText("W");
-            text_2_2.requestFocus();
-        } else if (text_2_2.isFocused()) {
-            text_2_2.setText("W");
-            text_2_3.requestFocus();
-        } else if (text_2_3.isFocused()) {
-            text_2_3.setText("W");
-            text_2_4.requestFocus();
-        } else if (text_2_4.isFocused()) {
-            text_2_4.setText("W");
-            text_2_5.requestFocus();
-        } else if (text_2_5.isFocused()) {
-            text_2_5.setText("W");
-        } else if (text_3_1.isFocused()) {
-            text_3_1.setText("W");
-            text_3_2.requestFocus();
-        } else if (text_3_2.isFocused()) {
-            text_3_2.setText("W");
-            text_3_3.requestFocus();
-        } else if (text_3_3.isFocused()) {
-            text_3_3.setText("W");
-            text_3_4.requestFocus();
-        } else if (text_3_4.isFocused()) {
-            text_3_4.setText("W");
-            text_3_5.requestFocus();
-        } else if (text_3_5.isFocused()) {
-            text_3_5.setText("W");
-        } else if (text_4_1.isFocused()) {
-            text_4_1.setText("W");
-            text_4_2.requestFocus();
-        } else if (text_4_2.isFocused()) {
-            text_4_2.setText("W");
-            text_4_3.requestFocus();
-        } else if (text_4_3.isFocused()) {
-            text_4_3.setText("W");
-            text_4_4.requestFocus();
-        } else if (text_4_4.isFocused()) {
-            text_4_4.setText("W");
-            text_4_5.requestFocus();
-        } else if (text_4_5.isFocused()) {
-            text_4_5.setText("W");
-        } else if (text_5_1.isFocused()) {
-            text_5_1.setText("W");
-            text_5_2.requestFocus();
-        } else if (text_5_2.isFocused()) {
-            text_5_2.setText("W");
-            text_5_3.requestFocus();
-        } else if (text_5_3.isFocused()) {
-            text_5_3.setText("W");
-            text_5_4.requestFocus();
-        } else if (text_5_4.isFocused()) {
-            text_5_4.setText("W");
-            text_5_5.requestFocus();
-        } else if (text_5_5.isFocused()) {
-            text_5_5.setText("W");
-        } else if (text_6_1.isFocused()) {
-            text_6_1.setText("W");
-            text_6_2.requestFocus();
-        } else if (text_6_2.isFocused()) {
-            text_6_2.setText("W");
-            text_6_3.requestFocus();
-        } else if (text_6_3.isFocused()) {
-            text_6_3.setText("W");
-            text_6_4.requestFocus();
-        } else if (text_6_4.isFocused()) {
-            text_6_4.setText("W");
-            text_6_5.requestFocus();
-        } else if (text_6_5.isFocused()) {
-            text_6_5.setText("W");
-        }
+        Funciones.botonTeclado("W",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
     }
-    public void btnE(){
-        if (text_1_1.isFocused()) {
-            text_1_1.setText("E");
-            text_1_2.requestFocus();
-        } else if (text_1_2.isFocused()) {
-            text_1_2.setText("E");
-            text_1_3.requestFocus();
-        } else if (text_1_3.isFocused()) {
-            text_1_3.setText("E");
-            text_1_4.requestFocus();
-        } else if (text_1_4.isFocused()) {
-            text_1_4.setText("E");
-            text_1_5.requestFocus();
-        } else if (text_1_5.isFocused()) {
-            text_1_5.setText("E");
-        } else if (text_2_1.isFocused()) {
-            text_2_1.setText("E");
-            text_2_2.requestFocus();
-        } else if (text_2_2.isFocused()) {
-            text_2_2.setText("E");
-            text_2_3.requestFocus();
-        } else if (text_2_3.isFocused()) {
-            text_2_3.setText("E");
-            text_2_4.requestFocus();
-        } else if (text_2_4.isFocused()) {
-            text_2_4.setText("E");
-            text_2_5.requestFocus();
-        } else if (text_2_5.isFocused()) {
-            text_2_5.setText("E");
-        } else if (text_3_1.isFocused()) {
-            text_3_1.setText("E");
-            text_3_2.requestFocus();
-        } else if (text_3_2.isFocused()) {
-            text_3_2.setText("E");
-            text_3_3.requestFocus();
-        } else if (text_3_3.isFocused()) {
-            text_3_3.setText("E");
-            text_3_4.requestFocus();
-        } else if (text_3_4.isFocused()) {
-            text_3_4.setText("E");
-            text_3_5.requestFocus();
-        } else if (text_3_5.isFocused()) {
-            text_3_5.setText("E");
-        } else if (text_4_1.isFocused()) {
-            text_4_1.setText("E");
-            text_4_2.requestFocus();
-        } else if (text_4_2.isFocused()) {
-            text_4_2.setText("E");
-            text_4_3.requestFocus();
-        } else if (text_4_3.isFocused()) {
-            text_4_3.setText("E");
-            text_4_4.requestFocus();
-        } else if (text_4_4.isFocused()) {
-            text_4_4.setText("E");
-            text_4_5.requestFocus();
-        } else if (text_4_5.isFocused()) {
-            text_4_5.setText("E");
-        } else if (text_5_1.isFocused()) {
-            text_5_1.setText("E");
-            text_5_2.requestFocus();
-        } else if (text_5_2.isFocused()) {
-            text_5_2.setText("E");
-            text_5_3.requestFocus();
-        } else if (text_5_3.isFocused()) {
-            text_5_3.setText("E");
-            text_5_4.requestFocus();
-        } else if (text_5_4.isFocused()) {
-            text_5_4.setText("E");
-            text_5_5.requestFocus();
-        } else if (text_5_5.isFocused()) {
-            text_5_5.setText("E");
-        } else if (text_6_1.isFocused()) {
-            text_6_1.setText("E");
-            text_6_2.requestFocus();
-        } else if (text_6_2.isFocused()) {
-            text_6_2.setText("E");
-            text_6_3.requestFocus();
-        } else if (text_6_3.isFocused()) {
-            text_6_3.setText("E");
-            text_6_4.requestFocus();
-        } else if (text_6_4.isFocused()) {
-            text_6_4.setText("E");
-            text_6_5.requestFocus();
-        } else if (text_6_5.isFocused()) {
-            text_6_5.setText("E");
-        }
+    public void btnE() {
+        Funciones.botonTeclado("E", text_1_1, text_1_2, text_1_3, text_1_4, text_1_5,
+                text_2_1, text_2_2, text_2_3, text_2_4, text_2_5,
+                text_3_1, text_3_2, text_3_3, text_3_4, text_3_5,
+                text_4_1, text_4_2, text_4_3, text_4_4, text_4_5,
+                text_5_1, text_5_2, text_5_3, text_5_4, text_5_5,
+                text_6_1, text_6_2, text_6_3, text_6_4, text_6_5);
     }
-
-}
+    public void btnR(){
+        Funciones.botonTeclado("R",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnT(){
+        Funciones.botonTeclado("T",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnY(){
+        Funciones.botonTeclado("Y",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnU(){
+        Funciones.botonTeclado("U",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnI(){
+        Funciones.botonTeclado("I",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnO(){
+        Funciones.botonTeclado("O",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnP(){
+        Funciones.botonTeclado("P",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnA(){
+        Funciones.botonTeclado("A",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnS(){
+        Funciones.botonTeclado("S",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnD(){
+        Funciones.botonTeclado("D",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnF(){
+        Funciones.botonTeclado("F",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnG(){
+        Funciones.botonTeclado("G",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnH(){
+        Funciones.botonTeclado("H",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnJ(){
+        Funciones.botonTeclado("J",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnK(){
+        Funciones.botonTeclado("K",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnL(){
+        Funciones.botonTeclado("L",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnÑ(){
+        Funciones.botonTeclado("Ñ",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnZ(){
+        Funciones.botonTeclado("Z",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnX(){
+        Funciones.botonTeclado("X",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnC(){
+        Funciones.botonTeclado("C",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnV(){
+        Funciones.botonTeclado("V",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnB(){
+        Funciones.botonTeclado("B",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnN(){
+        Funciones.botonTeclado("N",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    public void btnM(){
+        Funciones.botonTeclado("M",text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
+    }
+    }

@@ -76,4 +76,96 @@ public class Funciones {
             tf5.setEditable(false);
         }
     }
+    public static void botonTeclado(String letra,TextField text_1_1,TextField text_1_2,TextField text_1_3,TextField text_1_4,TextField text_1_5,
+                             TextField text_2_1,TextField text_2_2,TextField text_2_3,TextField text_2_4,TextField text_2_5,
+                             TextField text_3_1,TextField text_3_2,TextField text_3_3,TextField text_3_4 ,TextField text_3_5,
+                             TextField text_4_1, TextField text_4_2,TextField text_4_3,TextField text_4_4 ,TextField text_4_5,
+                             TextField text_5_1,TextField text_5_2,TextField text_5_3,TextField text_5_4 ,TextField text_5_5,
+                             TextField text_6_1,TextField text_6_2,TextField text_6_3,TextField text_6_4 ,TextField text_6_5) {
+        if (text_1_1.isFocused()) {
+            text_1_1.setText(letra);
+            text_1_2.requestFocus();
+        } else if (text_1_2.isFocused()) {
+            text_1_2.setText(letra);
+            text_1_3.requestFocus();
+        } else if (text_1_3.isFocused()) {
+            text_1_3.setText(letra);
+            text_1_4.requestFocus();
+        } else if (text_1_4.isFocused()) {
+            text_1_4.setText(letra);
+            text_1_5.requestFocus();
+        } else if (text_1_5.isFocused()) {
+            text_1_5.setText(letra);
+        } else if (text_2_1.isFocused()) {
+            text_2_1.setText(letra);
+            text_2_2.requestFocus();
+        } else if (text_2_2.isFocused()) {
+            text_2_2.setText(letra);
+            text_2_3.requestFocus();
+        } else if (text_2_3.isFocused()) {
+            text_2_3.setText(letra);
+            text_2_4.requestFocus();
+        } else if (text_2_4.isFocused()) {
+            text_2_4.setText(letra);
+            text_2_5.requestFocus();
+        } else if (text_2_5.isFocused()) {
+            text_2_5.setText(letra);
+        } else if (text_3_1.isFocused()) {
+            text_3_1.setText(letra);
+            text_3_2.requestFocus();
+        } else if (text_3_2.isFocused()) {
+            text_3_2.setText(letra);
+            text_3_3.requestFocus();
+        } else if (text_3_3.isFocused()) {
+            text_3_3.setText(letra);
+            text_3_4.requestFocus();
+        } else if (text_3_4.isFocused()) {
+            text_3_4.setText(letra);
+            text_3_5.requestFocus();
+        } else if (text_3_5.isFocused()) {
+            text_3_5.setText(letra);
+        } else if (text_4_1.isFocused()) {
+            text_4_1.setText(letra);
+            text_4_2.requestFocus();
+        } else if (text_4_2.isFocused()) {
+            text_4_2.setText(letra);
+            text_4_3.requestFocus();
+        } else if (text_4_3.isFocused()) {
+            text_4_3.setText(letra);
+            text_4_4.requestFocus();
+        } else if (text_4_4.isFocused()) {
+            text_4_4.setText(letra);
+            text_4_5.requestFocus();
+        } else if (text_4_5.isFocused()) {
+            text_4_5.setText(letra);
+        } else if (text_5_1.isFocused()) {
+            text_5_1.setText(letra);
+            text_5_2.requestFocus();
+        } else if (text_5_2.isFocused()) {
+            text_5_2.setText(letra);
+            text_5_3.requestFocus();
+        } else if (text_5_3.isFocused()) {
+            text_5_3.setText(letra);
+            text_5_4.requestFocus();
+        } else if (text_5_4.isFocused()) {
+            text_5_4.setText(letra);
+            text_5_5.requestFocus();
+        } else if (text_5_5.isFocused()) {
+            text_5_5.setText(letra);
+        } else if (text_6_1.isFocused()) {
+            text_6_1.setText(letra);
+            text_6_2.requestFocus();
+        } else if (text_6_2.isFocused()) {
+            text_6_2.setText(letra);
+            text_6_3.requestFocus();
+        } else if (text_6_3.isFocused()) {
+            text_6_3.setText(letra);
+            text_6_4.requestFocus();
+        } else if (text_6_4.isFocused()) {
+            text_6_4.setText(letra);
+            text_6_5.requestFocus();
+        } else if (text_6_5.isFocused()) {
+            text_6_5.setText(letra);
+        }
+    }
 }
