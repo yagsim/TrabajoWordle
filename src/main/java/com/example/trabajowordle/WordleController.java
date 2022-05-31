@@ -5,7 +5,6 @@ import com.example.funciones.Funciones;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToolBar;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -65,13 +64,8 @@ public class WordleController {
         Funciones.ctrlTxtField(text_1_3, text_1_4, text_1_5, evt);
     }
     public void typeTextF1_5(KeyEvent evt) {
-        if (evt.getCode() == KeyCode.ENTER) {
-            text_2_1.requestFocus();
-            text_2_1.setEditable(true);
-            Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5);
-        } else {
-            Funciones.inputTxtField(text_1_4, text_1_5, evt);
-        }
+        Funciones.inputTxtField(text_1_4, text_1_5, text_2_1, evt, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5,
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
     }
     public void typeTextF2_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_2_1, text_2_1, text_2_2, evt);
@@ -86,13 +80,8 @@ public class WordleController {
         Funciones.ctrlTxtField(text_2_3, text_2_4, text_2_5, evt);
     }
     public void typeTextF2_5(KeyEvent evt) {
-        if (evt.getCode() == KeyCode.ENTER) {
-            text_3_1.requestFocus();
-            text_3_1.setEditable(true);
-            Funciones.validar(Funciones.pAleatoria, msg_db,msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5);
-        } else {
-            Funciones.inputTxtField(text_2_4, text_2_5, evt);
-        }
+        Funciones.inputTxtField(text_2_4, text_2_5, text_3_1, evt, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5,
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
     }
     public void typeTextF3_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_3_1, text_3_1, text_3_2, evt);
@@ -107,13 +96,8 @@ public class WordleController {
         Funciones.ctrlTxtField(text_3_3, text_3_4, text_3_5, evt);
     }
     public void typeTextF3_5( KeyEvent evt) {
-        if (evt.getCode() == KeyCode.ENTER) {
-            text_4_1.requestFocus();
-            text_4_1.setEditable(true);
-            Funciones.validar(Funciones.pAleatoria, msg_db,msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5);
-        } else {
-            Funciones.inputTxtField(text_3_4, text_3_5, evt);
-        }
+        Funciones.inputTxtField(text_3_4, text_3_5, text_4_1, evt, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5,
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
     }
     public void typeTextF4_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_4_1, text_4_1, text_4_2, evt);
@@ -128,15 +112,9 @@ public class WordleController {
         Funciones.ctrlTxtField(text_4_3, text_4_4, text_4_5, evt);
     }
     public void typeTextF4_5(KeyEvent evt) {
-        if (evt.getCode() == KeyCode.ENTER) {
-            text_5_1.requestFocus();
-            text_5_1.setEditable(true);
-            Funciones.validar(Funciones.pAleatoria, msg_db,msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5);
-        } else {
-            Funciones.inputTxtField(text_4_4, text_4_5, evt);
-        }
+        Funciones.inputTxtField(text_4_4, text_4_5, text_5_1, evt, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5,
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
     }
-
     public void typeTextF5_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_5_1, text_5_1, text_5_2, evt);
     }
@@ -150,13 +128,8 @@ public class WordleController {
         Funciones.ctrlTxtField(text_5_3, text_5_4, text_5_5, evt);
     }
     public void typeTextF5_5(KeyEvent evt) {
-        if (evt.getCode() == KeyCode.ENTER) {
-            text_6_1.requestFocus();
-            text_6_1.setEditable(true);
-            Funciones.validar(Funciones.pAleatoria,msg_db,msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5);
-        } else {
-            Funciones.inputTxtField(text_5_4, text_5_1, evt);
-        }
+        Funciones.inputTxtField(text_5_4, text_5_5, text_6_1, evt, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5,
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
     }
     public void typeTextF6_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_6_1, text_6_1, text_6_2, evt);
@@ -171,11 +144,8 @@ public class WordleController {
         Funciones.ctrlTxtField(text_6_3, text_6_4, text_6_5, evt);
     }
     public void typeTextF6_5(KeyEvent evt) {
-        if (evt.getCode() == KeyCode.ENTER) {
-            Funciones.validar(Funciones.pAleatoria, msg_db,msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5);
-        } else {
-            Funciones.inputTxtField(text_6_4, text_6_5, evt);
-        }
+        Funciones.inputTxtField(text_6_4, text_5_5, text_5_5, evt, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5,
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
     }
 
     public void btnQ(){
@@ -398,36 +368,48 @@ public class WordleController {
 
     public void btnMsgDB() {
         msg_db.setVisible(false);
+        msg_long.setVisible(false);
         grid_btn.setDisable(false);
         grid_textF.setDisable(false);
         if (text_2_1.isEditable()) {
             text_2_1.setEditable(false);
+            text_2_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             text_1_5.requestFocus();
             text_1_5.setEditable(true);
             text_1_5.deselect();
+            text_1_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
         } else if (text_3_1.isEditable()) {
             text_3_1.setEditable(false);
+            text_3_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             text_2_5.requestFocus();
             text_2_5.setEditable(true);
             text_2_5.deselect();
+            text_2_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
         } else if (text_4_1.isEditable()) {
             text_4_1.setEditable(false);
+            text_4_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             text_3_5.requestFocus();
             text_3_5.setEditable(true);
             text_3_5.deselect();
+            text_3_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
         } else if (text_5_1.isEditable()) {
             text_5_1.setEditable(false);
+            text_5_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             text_4_5.requestFocus();
             text_4_5.setEditable(true);
             text_4_5.deselect();
+            text_4_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
         } else if (text_6_1.isEditable()) {
             text_6_1.setEditable(false);
+            text_6_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             text_5_5.requestFocus();
             text_5_5.setEditable(true);
             text_5_5.deselect();
+            text_5_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
         } else if (text_6_1.isEditable()) {
             text_6_5.requestFocus();
             text_6_5.deselect();
+            text_6_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
         }
     }
 }
