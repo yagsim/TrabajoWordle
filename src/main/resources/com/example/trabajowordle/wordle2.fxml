@@ -26,7 +26,7 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-      
+
                       <TextField fx:id="text_1_1" alignment="CENTER" onKeyReleased="#typeTextF1_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;">
                      <font>
                         <Font name="System Bold" size="27.0" />
@@ -179,7 +179,7 @@
                   </TextField>
                </children>
             </GridPane>
-            <GridPane layoutX="51.0" layoutY="521.0" prefHeight="156.0" prefWidth="471.0">
+            <GridPane fx:id="grid_btn" layoutX="51.0" layoutY="521.0" prefHeight="156.0" prefWidth="471.0">
               <columnConstraints>
                   <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -351,6 +351,26 @@
                   </Button>
                </children>
             </GridPane>
+            <ToolBar fx:id="msg_db" focusTraversable="false" layoutX="78.0" layoutY="14.0" prefHeight="76.0" prefWidth="411.0" style="-fx-border-radius: 20%; -fx-background-color: black;" visible="false">
+               <items>
+                  <VBox prefHeight="72.0" prefWidth="399.0">
+                     <children>
+                        <Label alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="399.0" style="-fx-border-radius: 100; -fx-background-color: black; -fx-text-fill: white;" text="LA PALABRA NO EXISTE EN LA BASE DE DATOS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_msg_db" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnMsgDB" prefHeight="8.0" prefWidth="34.0" style="-fx-background-color: gray;" text="OK">
+                           <VBox.margin>
+                              <Insets left="180.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+               </items>
+            </ToolBar>
 
             </children>
         </Pane>

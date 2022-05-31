@@ -1,7 +1,11 @@
 package com.example.funciones;
 
 import com.example.conexion.Conector;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToolBar;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 
 import javax.swing.*;
 import java.sql.SQLOutput;
@@ -20,7 +24,7 @@ public class Funciones {
         return randomElement;
     }
 
-    public static void validar(String aleatoria, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+    public static void validar(String aleatoria, ToolBar msg_db, Button btn_msg_db, GridPane grdTF, GridPane grdBtn, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
         String test = tf1.getText() + tf2.getText() + tf3.getText() + tf4.getText() + tf5.getText();
         char letra1 = tf1.getText().charAt(0);
         char letra2 = tf2.getText().charAt(0);
@@ -48,8 +52,15 @@ public class Funciones {
                 cont4++;
         }
         if (cn.comprobar(test)==false) {
-            tf4.requestFocus();
-            JOptionPane.showMessageDialog(null, "ESTA PALABRA NO EXISTE EN LA BASE DE DATOS");
+            msg_db.setVisible(true);
+            grdBtn.setDisable(true);
+            grdTF.setDisable(true);
+            tf1.setText("");
+            tf2.setText("");
+            tf3.setText("");
+            tf4.setText("");
+            tf5.setText("");
+            btn_msg_db.requestFocus();
         } else {
             tf1.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");
             tf2.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");
