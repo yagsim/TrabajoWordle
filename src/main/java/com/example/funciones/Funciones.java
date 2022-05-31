@@ -238,4 +238,8 @@ public class Funciones {
             text_6_5.setText(letra);
         }
     }
+
+    public void resultado(){
+
+    }
 }
