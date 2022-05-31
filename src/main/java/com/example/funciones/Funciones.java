@@ -7,50 +7,62 @@ import javafx.scene.control.ToolBar;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
-import org.w3c.dom.Text;
-
-import javax.swing.*;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Funciones {
 
-    private static Conector cn = Conector.getInstancia();
-    public static String pAleatoria = Funciones.aleatorio(cn.select());
+    private static final Conector CN = Conector.getInstancia();
+    public static String pAleatoria = Funciones.aleatorio(CN.select());
 
     public static String aleatorio(ArrayList<String> palabras){
         Random ran = new Random();
         int randomitem = ran.nextInt(palabras.size());
-        String randomElement = palabras.get(randomitem);
-        return randomElement;
+        return palabras.get(randomitem);
     }
 
     public static void ctrlTxtField(TextField anterior, TextField actual, TextField siguiente, KeyEvent evt) {
         if (evt.getCode() == KeyCode.BACK_SPACE) {
-            actual.setEditable(false);
-            actual.setText("");
-            anterior.setEditable(true);
-            anterior.requestFocus();
-            anterior.deselect();
-        } else {
+            if (actual.getText().equals("")) {
+                actual.setEditable(false);
+                anterior.setEditable(true);
+                anterior.setText("");
+                anterior.requestFocus();
+                anterior.deselect();
+            } else {
+                actual.setText("");
+            }
+        } else if (evt.getCode()==KeyCode.A || evt.getCode()==KeyCode.B || evt.getCode()==KeyCode.C || evt.getCode()==KeyCode.D || evt.getCode()==KeyCode.E || evt.getCode()==KeyCode.F || evt.getCode()==KeyCode.G || evt.getCode()==KeyCode.H
+                || evt.getCode()==KeyCode.I || evt.getCode()==KeyCode.J || evt.getCode()==KeyCode.K || evt.getCode()==KeyCode.L || evt.getCode()==KeyCode.M || evt.getCode()==KeyCode.N || evt.getCode()==KeyCode.O
+                || evt.getCode()==KeyCode.P|| evt.getCode()==KeyCode.Q|| evt.getCode()==KeyCode.R|| evt.getCode()==KeyCode.S|| evt.getCode()==KeyCode.T|| evt.getCode()==KeyCode.U|| evt.getCode()==KeyCode.V|| evt.getCode()==KeyCode.W
+                || evt.getCode()==KeyCode.X|| evt.getCode()==KeyCode.Y|| evt.getCode()==KeyCode.Z || actual.getText().equalsIgnoreCase("ñ")) {
             actual.setText(actual.getText().toUpperCase());
             actual.setEditable(false);
             siguiente.requestFocus();
             siguiente.setEditable(true);
+        } else {
+            actual.setText("");
         }
     }
     public static void inputTxtField(TextField anterior, TextField actual, KeyEvent evt) {
         if (evt.getCode() == KeyCode.BACK_SPACE) {
-            actual.setEditable(false);
-            actual.setText("");
-            anterior.setEditable(true);
-            anterior.requestFocus();
-            anterior.deselect();
-        } else {
+            if (actual.getText().equals("")) {
+                actual.setEditable(false);
+                anterior.setEditable(true);
+                anterior.setText("");
+                anterior.requestFocus();
+                anterior.deselect();
+            } else {
+                actual.setText("");
+            }
+        } else if (evt.getCode()==KeyCode.A || evt.getCode()==KeyCode.B || evt.getCode()==KeyCode.C || evt.getCode()==KeyCode.D || evt.getCode()==KeyCode.E || evt.getCode()==KeyCode.F || evt.getCode()==KeyCode.G || evt.getCode()==KeyCode.H
+                || evt.getCode()==KeyCode.I || evt.getCode()==KeyCode.J || evt.getCode()==KeyCode.K || evt.getCode()==KeyCode.L || evt.getCode()==KeyCode.M || evt.getCode()==KeyCode.N || evt.getCode()==KeyCode.O
+                || evt.getCode()==KeyCode.P|| evt.getCode()==KeyCode.Q|| evt.getCode()==KeyCode.R|| evt.getCode()==KeyCode.S|| evt.getCode()==KeyCode.T|| evt.getCode()==KeyCode.U|| evt.getCode()==KeyCode.V|| evt.getCode()==KeyCode.W
+                || evt.getCode()==KeyCode.X|| evt.getCode()==KeyCode.Y|| evt.getCode()==KeyCode.Z || actual.getText().equalsIgnoreCase("ñ")){
             actual.setText(actual.getText().toUpperCase());
             actual.setEditable(false);
+        } else {
+            actual.setText("");
         }
     }
 
@@ -86,21 +98,11 @@ public class Funciones {
             msg_long.setVisible(true);
             grdBtn.setDisable(true);
             grdTF.setDisable(true);
-            tf1.setText("");
-            tf2.setText("");
-            tf3.setText("");
-            tf4.setText("");
-            tf5.setText("");
             btn_msg_long.requestFocus();
-        }else if (cn.comprobar(test)==false) {
+        }else if (!CN.comprobar(test)) {
             msg_db.setVisible(true);
             grdBtn.setDisable(true);
             grdTF.setDisable(true);
-            tf1.setText("");
-            tf2.setText("");
-            tf3.setText("");
-            tf4.setText("");
-            tf5.setText("");
             btn_msg_db.requestFocus();
         } else {
             tf1.setStyle("-fx-text-fill: white;-fx-background-color: #606060;");

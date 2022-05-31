@@ -400,18 +400,34 @@ public class WordleController {
         msg_db.setVisible(false);
         grid_btn.setDisable(false);
         grid_textF.setDisable(false);
-        if (text_1_1.isEditable()) {
-            text_1_1.requestFocus();
-        } else if (text_2_1.isEditable()) {
-            text_2_1.requestFocus();
+        if (text_2_1.isEditable()) {
+            text_2_1.setEditable(false);
+            text_1_5.requestFocus();
+            text_1_5.setEditable(true);
+            text_1_5.deselect();
         } else if (text_3_1.isEditable()) {
-            text_3_1.requestFocus();
+            text_3_1.setEditable(false);
+            text_2_5.requestFocus();
+            text_2_5.setEditable(true);
+            text_2_5.deselect();
         } else if (text_4_1.isEditable()) {
-            text_4_1.requestFocus();
+            text_4_1.setEditable(false);
+            text_3_5.requestFocus();
+            text_3_5.setEditable(true);
+            text_3_5.deselect();
         } else if (text_5_1.isEditable()) {
-            text_5_1.requestFocus();
+            text_5_1.setEditable(false);
+            text_4_5.requestFocus();
+            text_4_5.setEditable(true);
+            text_4_5.deselect();
         } else if (text_6_1.isEditable()) {
-            text_6_1.requestFocus();
+            text_6_1.setEditable(false);
+            text_5_5.requestFocus();
+            text_5_5.setEditable(true);
+            text_5_5.deselect();
+        } else if (text_6_1.isEditable()) {
+            text_6_5.requestFocus();
+            text_6_5.deselect();
         }
     }
 }
