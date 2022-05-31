@@ -4,8 +4,11 @@ import com.example.conexion.Conector;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToolBar;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import org.w3c.dom.Text;
 
 import javax.swing.*;
 import java.sql.SQLOutput;
@@ -24,7 +27,35 @@ public class Funciones {
         return randomElement;
     }
 
-    public static void validar(String aleatoria, ToolBar msg_db, Button btn_msg_db, GridPane grdTF, GridPane grdBtn, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+    public static void ctrlTxtField(TextField anterior, TextField actual, TextField siguiente, KeyEvent evt) {
+        if (evt.getCode() == KeyCode.BACK_SPACE) {
+            actual.setEditable(false);
+            actual.setText("");
+            anterior.setEditable(true);
+            anterior.requestFocus();
+            anterior.deselect();
+        } else {
+            actual.setText(actual.getText().toUpperCase());
+            actual.setEditable(false);
+            siguiente.requestFocus();
+            siguiente.setEditable(true);
+        }
+    }
+    public static void inputTxtField(TextField anterior, TextField actual, KeyEvent evt) {
+        if (evt.getCode() == KeyCode.BACK_SPACE) {
+            actual.setEditable(false);
+            actual.setText("");
+            anterior.setEditable(true);
+            anterior.requestFocus();
+            anterior.deselect();
+        } else {
+            actual.setText(actual.getText().toUpperCase());
+            actual.setEditable(false);
+        }
+    }
+
+    public static void validar(String aleatoria, ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grdTF, GridPane grdBtn, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+
         String test = tf1.getText() + tf2.getText() + tf3.getText() + tf4.getText() + tf5.getText();
         char letra1 = tf1.getText().charAt(0);
         char letra2 = tf2.getText().charAt(0);
@@ -51,7 +82,17 @@ public class Funciones {
             if (aleatoria.charAt(i) == letra4)
                 cont4++;
         }
-        if (cn.comprobar(test)==false) {
+        if (test.length()!=5) {
+            msg_long.setVisible(true);
+            grdBtn.setDisable(true);
+            grdTF.setDisable(true);
+            tf1.setText("");
+            tf2.setText("");
+            tf3.setText("");
+            tf4.setText("");
+            tf5.setText("");
+            btn_msg_long.requestFocus();
+        }else if (cn.comprobar(test)==false) {
             msg_db.setVisible(true);
             grdBtn.setDisable(true);
             grdTF.setDisable(true);

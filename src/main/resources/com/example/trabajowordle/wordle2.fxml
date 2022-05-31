@@ -32,147 +32,147 @@
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_1_2" alignment="CENTER" onKeyReleased="#typeTextF1_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1">
+                      <TextField fx:id="text_1_2" alignment="CENTER" editable="false" onKeyReleased="#typeTextF1_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_1_3" alignment="CENTER" onKeyReleased="#typeTextF1_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2">
+                      <TextField fx:id="text_1_3" alignment="CENTER" editable="false" onKeyReleased="#typeTextF1_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_1_4" alignment="CENTER" onKeyReleased="#typeTextF1_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3">
+                      <TextField fx:id="text_1_4" alignment="CENTER" editable="false" onKeyReleased="#typeTextF1_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_1_5" alignment="CENTER" onKeyReleased="#typeTextF1_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4">
+                      <TextField fx:id="text_1_5" alignment="CENTER" editable="false" onKeyReleased="#typeTextF1_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_2_1" alignment="CENTER" onKeyReleased="#typeTextF2_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="1">
+                      <TextField fx:id="text_2_1" alignment="CENTER" editable="false" onKeyReleased="#typeTextF2_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_2_2" alignment="CENTER" onKeyReleased="#typeTextF2_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <TextField fx:id="text_2_2" alignment="CENTER" editable="false" onKeyReleased="#typeTextF2_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_2_3" alignment="CENTER" onKeyReleased="#typeTextF2_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                      <TextField fx:id="text_2_3" alignment="CENTER" editable="false" onKeyReleased="#typeTextF2_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_2_4" alignment="CENTER" onKeyReleased="#typeTextF2_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                      <TextField fx:id="text_2_4" alignment="CENTER" editable="false" onKeyReleased="#typeTextF2_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_2_5" alignment="CENTER" onKeyReleased="#typeTextF2_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                      <TextField fx:id="text_2_5" alignment="CENTER" editable="false" onKeyReleased="#typeTextF2_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_3_1" alignment="CENTER" onKeyReleased="#typeTextF3_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="2">
+                      <TextField fx:id="text_3_1" alignment="CENTER" editable="false" onKeyReleased="#typeTextF3_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_3_2" alignment="CENTER" onKeyReleased="#typeTextF3_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                      <TextField fx:id="text_3_2" alignment="CENTER" editable="false" onKeyReleased="#typeTextF3_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_3_3" alignment="CENTER" onKeyReleased="#typeTextF3_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                      <TextField fx:id="text_3_3" alignment="CENTER" editable="false" onKeyReleased="#typeTextF3_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_3_4" alignment="CENTER" onKeyReleased="#typeTextF3_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                      <TextField fx:id="text_3_4" alignment="CENTER" editable="false" onKeyReleased="#typeTextF3_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_3_5" alignment="CENTER" onKeyReleased="#typeTextF3_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                      <TextField fx:id="text_3_5" alignment="CENTER" editable="false" onKeyReleased="#typeTextF3_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_4_1" alignment="CENTER" onKeyReleased="#typeTextF4_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="3">
+                      <TextField fx:id="text_4_1" alignment="CENTER" editable="false" onKeyReleased="#typeTextF4_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_4_2" alignment="CENTER" onKeyReleased="#typeTextF4_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                      <TextField fx:id="text_4_2" alignment="CENTER" editable="false" onKeyReleased="#typeTextF4_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_4_3" alignment="CENTER" onKeyReleased="#typeTextF4_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                      <TextField fx:id="text_4_3" alignment="CENTER" editable="false" onKeyReleased="#typeTextF4_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_4_4" alignment="CENTER" onKeyReleased="#typeTextF4_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                      <TextField fx:id="text_4_4" alignment="CENTER" editable="false" onKeyReleased="#typeTextF4_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_4_5" alignment="CENTER" onKeyReleased="#typeTextF4_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                      <TextField fx:id="text_4_5" alignment="CENTER" editable="false" onKeyReleased="#typeTextF4_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_5_1" alignment="CENTER" onKeyReleased="#typeTextF5_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="4">
+                      <TextField fx:id="text_5_1" alignment="CENTER" editable="false" onKeyReleased="#typeTextF5_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="4">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_5_2" alignment="CENTER" onKeyReleased="#typeTextF5_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                      <TextField fx:id="text_5_2" alignment="CENTER" editable="false" onKeyReleased="#typeTextF5_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_5_3" alignment="CENTER" onKeyReleased="#typeTextF5_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                      <TextField fx:id="text_5_3" alignment="CENTER" editable="false" onKeyReleased="#typeTextF5_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="4">
                           <font>
                               <Font name="System Bold" size="27.0" />
                           </font>
                   </TextField>
-                      <TextField fx:id="text_5_4" alignment="CENTER" onKeyReleased="#typeTextF5_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                      <TextField fx:id="text_5_4" alignment="CENTER" editable="false" onKeyReleased="#typeTextF5_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_5_5" alignment="CENTER" onKeyReleased="#typeTextF5_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                      <TextField fx:id="text_5_5" alignment="CENTER" editable="false" onKeyReleased="#typeTextF5_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="4">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_6_5" alignment="CENTER" onKeyReleased="#typeTextF6_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                      <TextField fx:id="text_6_5" alignment="CENTER" editable="false" onKeyReleased="#typeTextF6_5" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="4" GridPane.rowIndex="5">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_6_4" alignment="CENTER" onKeyReleased="#typeTextF6_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                      <TextField fx:id="text_6_4" alignment="CENTER" editable="false" onKeyReleased="#typeTextF6_4" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="3" GridPane.rowIndex="5">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_6_3" alignment="CENTER" onKeyReleased="#typeTextF6_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                      <TextField fx:id="text_6_3" alignment="CENTER" editable="false" onKeyReleased="#typeTextF6_3" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="2" GridPane.rowIndex="5">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_6_2" alignment="CENTER" onKeyReleased="#typeTextF6_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                      <TextField fx:id="text_6_2" alignment="CENTER" editable="false" onKeyReleased="#typeTextF6_2" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.columnIndex="1" GridPane.rowIndex="5">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
                   </TextField>
-                      <TextField fx:id="text_6_1" alignment="CENTER" onKeyReleased="#typeTextF6_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="5">
+                      <TextField fx:id="text_6_1" alignment="CENTER" editable="false" onKeyReleased="#typeTextF6_1" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: A8A8A8FF;" GridPane.rowIndex="5">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
@@ -367,6 +367,27 @@
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font></Button>
+                     </children>
+                  </VBox>
+               </items>
+            </ToolBar>
+            <ToolBar fx:id="msg_long" focusTraversable="false" layoutX="73.0" layoutY="14.0" prefHeight="82.0" prefWidth="421.0" style="-fx-border-radius: 20%; -fx-background-color: black;" visible="false">
+               <items>
+                  <VBox prefHeight="72.0" prefWidth="408.0">
+                     <children>
+                        <Label alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="413.0" style="-fx-border-radius: 100; -fx-background-color: black; -fx-text-fill: white;" text="LA PALABRA NO TIENE LA LONGITUD NECESARIA" textAlignment="CENTER">
+                           <font>
+                              <Font name="Corbel Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_msg_long" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnMsgDB" prefHeight="8.0" prefWidth="34.0" style="-fx-background-color: gray;" text="OK">
+                           <VBox.margin>
+                              <Insets left="180.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
                      </children>
                   </VBox>
                </items>
