@@ -13,7 +13,7 @@ import java.util.Random;
 public class Funciones {
 
     private static final Conector CN = Conector.getInstancia();
-    public static String pAleatoria = "PIPEN";//Funciones.aleatorio(CN.select());
+    public static String pAleatoria = Funciones.aleatorio(CN.select());
 
     public static String aleatorio(ArrayList<String> palabras){
         Random ran = new Random();
