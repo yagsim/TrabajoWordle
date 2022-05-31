@@ -27,6 +27,7 @@ public class Wordle extends Application {
         cn.connect();
         System.out.println(Funciones.pAleatoria);
         launch();
+        cn.close();
     }
 
 

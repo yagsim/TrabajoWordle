@@ -144,7 +144,7 @@ public class WordleController {
         Funciones.ctrlTxtField(text_6_3, text_6_4, text_6_5, evt);
     }
     public void typeTextF6_5(KeyEvent evt) {
-        Funciones.inputTxtField(text_6_4, text_5_5, text_5_5, evt, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5,
+        Funciones.inputTxtField(text_6_4, text_6_5, text_6_5, evt, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5,
                 msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
     }
 
@@ -406,7 +406,7 @@ public class WordleController {
             text_5_5.setEditable(true);
             text_5_5.deselect();
             text_5_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
-        } else if (text_6_1.isEditable()) {
+        } else if (text_6_5.isEditable()) {
             text_6_5.requestFocus();
             text_6_5.deselect();
             text_6_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");

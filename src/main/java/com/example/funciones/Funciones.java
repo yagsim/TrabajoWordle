@@ -83,6 +83,7 @@ public class Funciones {
     }
 
     public static void validar(String aleatoria, ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grdTF, GridPane grdBtn, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+        CN.connect();
         if (tf5.getText().isEmpty()) {
             msg_long.setVisible(true);
             grdBtn.setDisable(true);
@@ -205,6 +206,7 @@ public class Funciones {
                 }
             }
         }
+        CN.close();
     }
     public static void botonTeclado(String letra,TextField text_1_1,TextField text_1_2,TextField text_1_3,TextField text_1_4,TextField text_1_5,
                              TextField text_2_1,TextField text_2_2,TextField text_2_3,TextField text_2_4,TextField text_2_5,
