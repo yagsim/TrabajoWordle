@@ -13,7 +13,7 @@ import java.util.Random;
 public class Funciones {
 
     private static final Conector CN = Conector.getInstancia();
-    public static String pAleatoria = Funciones.aleatorio(CN.select());
+    public static String pAleatoria = "SALAR";//Funciones.aleatorio(CN.select());
 
     public static String aleatorio(ArrayList<String> palabras){
         Random ran = new Random();
@@ -38,6 +38,7 @@ public class Funciones {
                 || evt.getCode()==KeyCode.I || evt.getCode()==KeyCode.J || evt.getCode()==KeyCode.K || evt.getCode()==KeyCode.L || evt.getCode()==KeyCode.M || evt.getCode()==KeyCode.N || evt.getCode()==KeyCode.O
                 || evt.getCode()==KeyCode.P|| evt.getCode()==KeyCode.Q|| evt.getCode()==KeyCode.R|| evt.getCode()==KeyCode.S|| evt.getCode()==KeyCode.T|| evt.getCode()==KeyCode.U|| evt.getCode()==KeyCode.V|| evt.getCode()==KeyCode.W
                 || evt.getCode()==KeyCode.X|| evt.getCode()==KeyCode.Y|| evt.getCode()==KeyCode.Z || actual.getText().equalsIgnoreCase("ñ")) {
+            actual.setText(""+actual.getText().charAt(0));
             actual.setText(actual.getText().toUpperCase());
             actual.setEditable(false);
             actual.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
@@ -74,6 +75,7 @@ public class Funciones {
                     || evt.getCode()==KeyCode.I || evt.getCode()==KeyCode.J || evt.getCode()==KeyCode.K || evt.getCode()==KeyCode.L || evt.getCode()==KeyCode.M || evt.getCode()==KeyCode.N || evt.getCode()==KeyCode.O
                     || evt.getCode()==KeyCode.P|| evt.getCode()==KeyCode.Q|| evt.getCode()==KeyCode.R|| evt.getCode()==KeyCode.S|| evt.getCode()==KeyCode.T|| evt.getCode()==KeyCode.U|| evt.getCode()==KeyCode.V|| evt.getCode()==KeyCode.W
                     || evt.getCode()==KeyCode.X|| evt.getCode()==KeyCode.Y|| evt.getCode()==KeyCode.Z || actual.getText().equalsIgnoreCase("ñ")){
+                actual.setText(""+actual.getText().charAt(0));
                 actual.setText(actual.getText().toUpperCase());
                 actual.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             } else {
@@ -116,6 +118,11 @@ public class Funciones {
                 if (aleatoria.charAt(i) == letra4)
                     cont4++;
             }
+            int cont5 = 0;
+            for (int i = 0; i < aleatoria.length(); i++) {
+                if (aleatoria.charAt(i) == letra5)
+                    cont5++;
+            }
             if (!CN.comprobar(test)) {
                 msg_db.setVisible(true);
                 grdBtn.setDisable(true);
@@ -137,10 +144,12 @@ public class Funciones {
                     if (aleatoria.charAt(0) == letra1) {
                         tf1.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + letra1))) {
-                        System.out.println( aleatoria+" "+letra1+" "+aleatoria.contains(("" + letra1)));
                         if ((letra1==letra2 || letra1==letra3 || letra1==letra4 || letra1==letra5)) {
-                            if (aleatoria.charAt(1)!=letra2 && aleatoria.charAt(2)!=letra3 && aleatoria.charAt(3)!=letra4 && aleatoria.charAt(4)!=letra5)
+                            if (aleatoria.charAt(1)!=letra2 && aleatoria.charAt(2)!=letra3 && aleatoria.charAt(3)!=letra4 && aleatoria.charAt(4)!=letra5) {
                                 tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
+                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else {
                             tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
@@ -151,8 +160,11 @@ public class Funciones {
                         tf2.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + letra2))) {
                         if (letra2==letra3 || letra2==letra4 || letra2==letra5) {
-                            if (aleatoria.charAt(2) != letra3 && aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5)
+                            if (aleatoria.charAt(2) != letra3 && aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5) {
                                 tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
+                                tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         }else if ((letra2==letra1)) {
                             if (cont1 > 1)
                                 tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
@@ -165,9 +177,12 @@ public class Funciones {
                         tf3.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf3.getText().charAt(0)))) {
                         if (letra3==letra4 || letra3==letra5) {
-                            if (aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5)
+                            if (aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5) {
                                 tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                        }else if (letra3==letra1  || letra3==letra2 ) {
+                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
+                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
+                            }else if (letra3==letra1  || letra3==letra2 ) {
                             if (cont1 > 1 || cont2 > 1)
                                 tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         } else {
@@ -179,8 +194,11 @@ public class Funciones {
                         tf4.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf4.getText().charAt(0)))) {
                         if (letra4==letra5) {
-                            if (aleatoria.charAt(4) != letra5)
+                            if (aleatoria.charAt(4) != letra5) {
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
+                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else if (letra4==letra1  || letra4==letra2  || letra4==letra3) {
                             if (cont1 > 1 || cont2 > 1 || cont3 > 1)
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
