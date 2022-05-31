@@ -13,7 +13,7 @@ import java.util.Random;
 public class Funciones {
 
     private static final Conector CN = Conector.getInstancia();
-    public static String pAleatoria = Funciones.aleatorio(CN.select());
+    public static String pAleatoria = "PIPEN";//Funciones.aleatorio(CN.select());
 
     public static String aleatorio(ArrayList<String> palabras){
         Random ran = new Random();
@@ -137,6 +137,7 @@ public class Funciones {
                     if (aleatoria.charAt(0) == letra1) {
                         tf1.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + letra1))) {
+                        System.out.println( aleatoria+" "+letra1+" "+aleatoria.contains(("" + letra1)));
                         if ((letra1==letra2 || letra1==letra3 || letra1==letra4 || letra1==letra5)) {
                             if (aleatoria.charAt(1)!=letra2 && aleatoria.charAt(2)!=letra3 && aleatoria.charAt(3)!=letra4 && aleatoria.charAt(4)!=letra5)
                                 tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
@@ -151,7 +152,7 @@ public class Funciones {
                     } else if (aleatoria.contains(("" + letra2))) {
                         if (letra2==letra3 || letra2==letra4 || letra2==letra5) {
                             if (aleatoria.charAt(2) != letra3 && aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5)
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }else if ((letra2==letra1)) {
                             if (cont1 > 1)
                                 tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
@@ -165,7 +166,7 @@ public class Funciones {
                     } else if (aleatoria.contains(("" + tf3.getText().charAt(0)))) {
                         if (letra3==letra4 || letra3==letra5) {
                             if (aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5)
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }else if (letra3==letra1  || letra3==letra2 ) {
                             if (cont1 > 1 || cont2 > 1)
                                 tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
@@ -179,7 +180,7 @@ public class Funciones {
                     } else if (aleatoria.contains(("" + tf4.getText().charAt(0)))) {
                         if (letra4==letra5) {
                             if (aleatoria.charAt(4) != letra5)
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         } else if (letra4==letra1  || letra4==letra2  || letra4==letra3) {
                             if (cont1 > 1 || cont2 > 1 || cont3 > 1)
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
