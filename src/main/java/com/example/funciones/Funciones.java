@@ -2,11 +2,14 @@ package com.example.funciones;
 
 import com.example.conexion.Conector;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToolBar;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,13 +24,30 @@ public class Funciones {
         return palabras.get(randomitem);
     }
 
-    public static void victoria(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+    public static void victoria(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
+                                Pane pane_vic, Label def, GridPane grid_tf, GridPane grid_btn) {
         if (tf1.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf2.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf3.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf4.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf5.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")) {
-
+            grid_btn.setDisable(true);
+            grid_tf.setDisable(true);
+            def.setText(Funciones.pAleatoria);
+            pane_vic.setVisible(true);
+        }
+    }
+    public static void derrota(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
+                                Pane pane_derr, Label msg, GridPane grid_tf, GridPane grid_btn) {
+        if (!tf1.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf2.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf3.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf4.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf5.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")) {
+            grid_btn.setDisable(true);
+            grid_tf.setDisable(true);
+            msg.setText("La palabra era:\n" + Funciones.pAleatoria);
+            pane_derr.setVisible(true);
         }
     }
 
@@ -61,13 +81,17 @@ public class Funciones {
     }
     public static void inputTxtField(TextField anterior, TextField actual, TextField siguiente, KeyEvent evt,
                                      TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
-                                     ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grid_textF, GridPane grid_btn) {
+                                     ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grid_textF, GridPane grid_btn,
+                                     Pane derrota, Label msg_derr) {
         if (evt.getCode() == KeyCode.ENTER) {
             actual.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             siguiente.requestFocus();
             siguiente.setEditable(true);
             siguiente.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, tf1, tf2, tf3, tf4, tf5);
+            if (actual.getId().equals("text_6_5")) {
+                Funciones.derrota(tf1, tf2, tf3, tf4, tf5, derrota, msg_derr, grid_textF, grid_btn);
+            }
         } else {
             if (evt.getCode() == KeyCode.BACK_SPACE) {
                 if (actual.getText().equals("")) {
@@ -156,25 +180,65 @@ public class Funciones {
                         tf1.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + letra1))) {
                         if ((letra1==letra2 || letra1==letra3 || letra1==letra4 || letra1==letra5)) {
-                            if (aleatoria.charAt(1)!=letra2 && aleatoria.charAt(2)!=letra3 && aleatoria.charAt(3)!=letra4 && aleatoria.charAt(4)!=letra5) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            if (letra1 == letra2) {
+                                if (aleatoria.charAt(1) == letra2) {
+                                    if (cont2 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra1 == letra3) {
+                                if (aleatoria.charAt(2) == letra3) {
+                                    if (cont3 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra1 == letra4) {
+                                if (aleatoria.charAt(3) == letra4) {
+                                    if (cont4 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra1==letra5) {
+                                if (aleatoria.charAt(4) == letra5) {
+                                    if (cont5 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
                             }
                         } else {
                             tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
-
                     }
 
                     if (aleatoria.charAt(1) == letra2) {
                         tf2.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + letra2))) {
                         if (letra2==letra3 || letra2==letra4 || letra2==letra5) {
-                            if (aleatoria.charAt(2) != letra3 && aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5) {
-                                tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            if (letra2==letra3) {
+                                if (aleatoria.charAt(2) == letra3) {
+                                    if (cont3 > 1)
+                                        tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra2==letra4) {
+                                if (aleatoria.charAt(3) == letra4) {
+                                    if (cont4 > 1)
+                                        tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra2==letra5) {
+                                if (aleatoria.charAt(4) == letra5) {
+                                    if (cont5 > 1)
+                                        tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
                             }
                         }else if ((letra2==letra1)) {
                             if (cont1 > 1)
@@ -188,14 +252,27 @@ public class Funciones {
                         tf3.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf3.getText().charAt(0)))) {
                         if (letra3==letra4 || letra3==letra5) {
-                            if (aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5) {
-                                tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            if (letra3==letra4) {
+                                if (aleatoria.charAt(3) == letra4) {
+                                    if (cont4 > 1)
+                                        tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra3==letra5) {
+                                if (aleatoria.charAt(4) == letra5) {
+                                    if (cont5 > 1)
+                                        tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
                             }
-                        }else if (letra3==letra1  || letra3==letra2 ) {
-                            if (cont1 > 1 && cont2 > 1)
+                        }else if (letra3==letra1 || letra3==letra2 ) {
+                            if (cont1 > 1 && letra3==letra1) {
                                 tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont2>1 && letra3==letra2) {
+                                tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else {
                             tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
@@ -204,15 +281,29 @@ public class Funciones {
                     if (aleatoria.charAt(3) == tf4.getText().charAt(0)) {
                         tf4.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf4.getText().charAt(0)))) {
+                        //si la letra4 es la misma que la letra siguiente (5)
                         if (letra4==letra5) {
-                            if (aleatoria.charAt(4) != letra5) {
+                            //si la letra en la pos.5 está en verde
+                            if (aleatoria.charAt(4) == letra5) {
+                                //si la palabra contiene esa letra más de 1 vez
+                                if (cont5 > 1)
+                                    tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            //si no, (si la letra5, no está en verde)
+                            } else {
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                             }
+                        //si no, si la letra4 es igual a alguna de las letras anteriores
                         } else if (letra4==letra1  || letra4==letra2  || letra4==letra3) {
-                            if (cont1 > 1 && cont2 > 1 && cont3 > 1)
+                            //si la letra4 es igual a la letra1, y la letra1 aparece más veces en la palabra
+                            if (cont1 > 1 && letra4==letra1) {
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            //si la letra4 es igual a la letra2, y la letra2 aparece más veces en la palabra
+                            } else if (cont2 >1 && letra4 == letra2) {
+                                tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            //si la letra4 es igual a la letra3, y la letra3 aparece más veces en la palabra
+                            } else if (cont3>1 && letra4==letra3) {
+                                tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else {
                             tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
@@ -222,8 +313,15 @@ public class Funciones {
                         tf5.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf5.getText().charAt(0)))) {
                         if (letra5==letra1 || letra5==letra2 || letra5==letra3 || letra5==letra4) {
-                            if (cont1 > 1 && cont2 > 1 && cont3 > 1 && cont4 > 1)
+                            if (cont1 > 1 && letra5==letra1) {
                                 tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }else if (cont2 > 1 && letra5==letra2) {
+                                tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont3 > 1 && letra5==letra3) {
+                                tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont4 > 1 && letra5==letra4) {
+                                tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else {
                             tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
@@ -619,13 +717,15 @@ public class Funciones {
                                 TextField text_4_1, TextField text_4_2,TextField text_4_3,TextField text_4_4 ,TextField text_4_5,
                                 TextField text_5_1,TextField text_5_2,TextField text_5_3,TextField text_5_4 ,TextField text_5_5,
                                 TextField text_6_1,TextField text_6_2,TextField text_6_3,TextField text_6_4 ,TextField text_6_5,
-                              ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grid_textF, GridPane grid_btn) {
+                              ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grid_textF, GridPane grid_btn,
+                              Pane victoria, Label def, Pane derrota, Label msg_der) {
         if (text_1_5.isFocused()) {
             text_1_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             text_2_1.requestFocus();
             text_2_1.setEditable(true);
             text_2_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5);
+            Funciones.victoria(text_1_1, text_1_2, text_1_3, text_1_4, text_1_5, victoria, def, grid_textF, grid_btn);
         }
         if (text_2_5.isFocused()) {
             text_2_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
@@ -633,6 +733,7 @@ public class Funciones {
             text_3_1.setEditable(true);
             text_3_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5);
+            Funciones.victoria(text_2_1, text_2_2, text_2_3, text_2_4, text_2_5, victoria, def, grid_textF, grid_btn);
         }
         if (text_3_5.isFocused()) {
             text_3_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
@@ -640,6 +741,7 @@ public class Funciones {
             text_4_1.setEditable(true);
             text_4_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5);
+            Funciones.victoria(text_3_1, text_3_2, text_3_3, text_3_4, text_3_5, victoria, def, grid_textF, grid_btn);
         }
         if (text_4_5.isFocused()) {
             text_4_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
@@ -647,6 +749,7 @@ public class Funciones {
             text_5_1.setEditable(true);
             text_5_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5);
+            Funciones.victoria(text_4_1, text_4_2, text_4_3, text_4_4, text_4_5, victoria, def, grid_textF, grid_btn);
         }
         if (text_5_5.isFocused()) {
             text_5_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
@@ -654,6 +757,7 @@ public class Funciones {
             text_6_1.setEditable(true);
             text_6_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5);
+            Funciones.victoria(text_5_1, text_5_2, text_5_3, text_5_4, text_5_5, victoria, def, grid_textF, grid_btn);
         }
         if (text_6_5.isFocused()) {
             text_6_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
@@ -661,6 +765,8 @@ public class Funciones {
             text_6_5.setEditable(true);
             text_6_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5);
+            Funciones.victoria(text_6_1, text_6_2, text_6_3, text_6_4, text_6_5, victoria, def, grid_textF, grid_btn);
+            Funciones.derrota(text_6_1, text_6_2, text_6_3, text_6_4, text_6_5, derrota, msg_der, grid_textF, grid_btn);
         }
     }
 
@@ -757,7 +863,4 @@ public class Funciones {
         }
     }
 
-    public void resultado(){
-
-    }
 }

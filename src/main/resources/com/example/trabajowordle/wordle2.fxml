@@ -398,7 +398,33 @@
                   </VBox>
                </items>
             </ToolBar>
-            <Pane layoutX="22.0" layoutY="133.0" prefHeight="245.0" prefWidth="525.0" style="-fx-background-color: black;" />
+            <Pane fx:id="victoria" layoutX="21.0" layoutY="121.0" prefHeight="317.0" prefWidth="530.0" style="-fx-background-color: black;" visible="false">
+               <children>
+                  <Label layoutX="23.0" layoutY="23.0" text="ACERTASTE" textFill="#6aaa64">
+                     <font>
+                        <Font name="Arial Black" size="72.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="def" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="138.0" prefHeight="144.0" prefWidth="365.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="derrota" layoutX="21.0" layoutY="122.0" prefHeight="317.0" prefWidth="530.0" style="-fx-background-color: black;" visible="false">
+               <children>
+                  <Label layoutX="64.0" layoutY="25.0" text="PERDISTE" textFill="#c34040">
+                     <font>
+                        <Font name="Arial Black" size="72.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="msg_derr" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="138.0" prefHeight="144.0" prefWidth="365.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
 
             </children>
         </Pane>
