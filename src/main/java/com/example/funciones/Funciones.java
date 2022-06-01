@@ -16,7 +16,7 @@ import java.util.Random;
 public class Funciones {
 
     private static final Conector CN = Conector.getInstancia();
-    public static String pAleatoria = Funciones.aleatorio(CN.select());
+    public static String pAleatoria = "ORFES";//Funciones.aleatorio(CN.select());
 
     public static String aleatorio(ArrayList<String> palabras){
         Random ran = new Random();
@@ -180,25 +180,65 @@ public class Funciones {
                         tf1.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + letra1))) {
                         if ((letra1==letra2 || letra1==letra3 || letra1==letra4 || letra1==letra5)) {
-                            if (aleatoria.charAt(1)!=letra2 && aleatoria.charAt(2)!=letra3 && aleatoria.charAt(3)!=letra4 && aleatoria.charAt(4)!=letra5) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            if (letra1 == letra2) {
+                                if (aleatoria.charAt(1) == letra2) {
+                                    if (cont2 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra1 == letra3) {
+                                if (aleatoria.charAt(2) == letra3) {
+                                    if (cont3 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra1 == letra4) {
+                                if (aleatoria.charAt(3) == letra4) {
+                                    if (cont4 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra1==letra5) {
+                                if (aleatoria.charAt(4) == letra5) {
+                                    if (cont5 > 1)
+                                        tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
                             }
                         } else {
                             tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
-
                     }
 
                     if (aleatoria.charAt(1) == letra2) {
                         tf2.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + letra2))) {
                         if (letra2==letra3 || letra2==letra4 || letra2==letra5) {
-                            if (aleatoria.charAt(2) != letra3 && aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5) {
-                                tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            if (letra2==letra3) {
+                                if (aleatoria.charAt(2) == letra3) {
+                                    if (cont3 > 1)
+                                        tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra2==letra4) {
+                                if (aleatoria.charAt(3) == letra4) {
+                                    if (cont4 > 1)
+                                        tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra2==letra5) {
+                                if (aleatoria.charAt(4) == letra5) {
+                                    if (cont5 > 1)
+                                        tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf2.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
                             }
                         }else if ((letra2==letra1)) {
                             if (cont1 > 1)
@@ -212,14 +252,27 @@ public class Funciones {
                         tf3.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf3.getText().charAt(0)))) {
                         if (letra3==letra4 || letra3==letra5) {
-                            if (aleatoria.charAt(3) != letra4 && aleatoria.charAt(4) != letra5) {
-                                tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            if (letra3==letra4) {
+                                if (aleatoria.charAt(3) == letra4) {
+                                    if (cont4 > 1)
+                                        tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
+                            } else if (letra3==letra5) {
+                                if (aleatoria.charAt(4) == letra5) {
+                                    if (cont5 > 1)
+                                        tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                } else {
+                                    tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                                }
                             }
-                        }else if (letra3==letra1  || letra3==letra2 ) {
-                            if (cont1 > 1 && cont2 > 1)
+                        }else if (letra3==letra1 || letra3==letra2 ) {
+                            if (cont1 > 1 && letra3==letra1) {
                                 tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont2>1 && letra3==letra2) {
+                                tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else {
                             tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
@@ -228,15 +281,29 @@ public class Funciones {
                     if (aleatoria.charAt(3) == tf4.getText().charAt(0)) {
                         tf4.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf4.getText().charAt(0)))) {
+                        //si la letra4 es la misma que la letra siguiente (5)
                         if (letra4==letra5) {
-                            if (aleatoria.charAt(4) != letra5) {
+                            //si la letra en la pos.5 está en verde
+                            if (aleatoria.charAt(4) == letra5) {
+                                //si la palabra contiene esa letra más de 1 vez
+                                if (cont5 > 1)
+                                    tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            //si no, (si la letra5, no está en verde)
+                            } else {
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
-                            } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
-                                tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                             }
+                        //si no, si la letra4 es igual a alguna de las letras anteriores
                         } else if (letra4==letra1  || letra4==letra2  || letra4==letra3) {
-                            if (cont1 > 1 && cont2 > 1 && cont3 > 1)
+                            //si la letra4 es igual a la letra1, y la letra1 aparece más veces en la palabra
+                            if (cont1 > 1 && letra4==letra1) {
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            //si la letra4 es igual a la letra2, y la letra2 aparece más veces en la palabra
+                            } else if (cont2 >1 && letra4 == letra2) {
+                                tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            //si la letra4 es igual a la letra3, y la letra3 aparece más veces en la palabra
+                            } else if (cont3>1 && letra4==letra3) {
+                                tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else {
                             tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
@@ -246,8 +313,15 @@ public class Funciones {
                         tf5.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf5.getText().charAt(0)))) {
                         if (letra5==letra1 || letra5==letra2 || letra5==letra3 || letra5==letra4) {
-                            if (cont1 > 1 && cont2 > 1 && cont3 > 1 && cont4 > 1)
+                            if (cont1 > 1 && letra5==letra1) {
                                 tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }else if (cont2 > 1 && letra5==letra2) {
+                                tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont3 > 1 && letra5==letra3) {
+                                tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            } else if (cont4 > 1 && letra5==letra4) {
+                                tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            }
                         } else {
                             tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         }
