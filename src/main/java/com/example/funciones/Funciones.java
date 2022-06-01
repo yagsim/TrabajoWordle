@@ -91,7 +91,8 @@ public class Funciones {
             siguiente.setEditable(true);
             siguiente.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, tf1, tf2, tf3, tf4, tf5,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
-            if (actual.getId().equals("text_6_5")) {
+            //tambien comprueba que el gridPane no esté desactivado, por si salta un mensaje de palabra no econtrada
+            if (actual.getId().equals("text_6_5") && !grid_textF.isDisable()) {
                 Funciones.derrota(tf1, tf2, tf3, tf4, tf5, derrota, msg_derr, grid_textF, grid_btn);
             }
         } else {
@@ -834,7 +835,9 @@ public class Funciones {
             text_6_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
             Funciones.victoria(text_6_1, text_6_2, text_6_3, text_6_4, text_6_5, victoria, def, grid_textF, grid_btn);
-            Funciones.derrota(text_6_1, text_6_2, text_6_3, text_6_4, text_6_5, derrota, msg_der, grid_textF, grid_btn);
+            if (!grid_textF.isDisable()) {
+                Funciones.derrota(text_6_1, text_6_2, text_6_3, text_6_4, text_6_5, derrota, msg_der, grid_textF, grid_btn);
+            }
         }
     }
 
@@ -847,85 +850,181 @@ public class Funciones {
         if (text_1_1.isFocused()) {
             text_1_1.setText(letra);
             text_1_2.requestFocus();
+            text_1_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_1_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_1_1.setEditable(false);
+            text_1_2.setEditable(true);
         } else if (text_1_2.isFocused()) {
             text_1_2.setText(letra);
             text_1_3.requestFocus();
+            text_1_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_1_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_1_2.setEditable(false);
+            text_1_3.setEditable(true);
         } else if (text_1_3.isFocused()) {
             text_1_3.setText(letra);
             text_1_4.requestFocus();
+            text_1_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_1_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_1_3.setEditable(false);
+            text_1_4.setEditable(true);
         } else if (text_1_4.isFocused()) {
             text_1_4.setText(letra);
             text_1_5.requestFocus();
+            text_1_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_1_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_1_4.setEditable(false);
+            text_1_5.setEditable(true);
         } else if (text_1_5.isFocused()) {
             text_1_5.setText(letra);
         } else if (text_2_1.isFocused()) {
             text_2_1.setText(letra);
             text_2_2.requestFocus();
+            text_2_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_2_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_2_1.setEditable(false);
+            text_2_2.setEditable(true);
         } else if (text_2_2.isFocused()) {
             text_2_2.setText(letra);
             text_2_3.requestFocus();
+            text_2_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_2_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_2_2.setEditable(false);
+            text_2_3.setEditable(true);
         } else if (text_2_3.isFocused()) {
             text_2_3.setText(letra);
             text_2_4.requestFocus();
+            text_2_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_2_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_2_3.setEditable(false);
+            text_2_4.setEditable(true);
         } else if (text_2_4.isFocused()) {
             text_2_4.setText(letra);
             text_2_5.requestFocus();
+            text_2_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_2_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_2_4.setEditable(false);
+            text_2_5.setEditable(true);
         } else if (text_2_5.isFocused()) {
             text_2_5.setText(letra);
         } else if (text_3_1.isFocused()) {
             text_3_1.setText(letra);
             text_3_2.requestFocus();
+            text_3_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_3_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_3_1.setEditable(false);
+            text_3_2.setEditable(true);
         } else if (text_3_2.isFocused()) {
             text_3_2.setText(letra);
             text_3_3.requestFocus();
+            text_3_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_3_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_3_2.setEditable(false);
+            text_3_3.setEditable(true);
         } else if (text_3_3.isFocused()) {
             text_3_3.setText(letra);
             text_3_4.requestFocus();
+            text_3_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_3_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_3_3.setEditable(false);
+            text_3_4.setEditable(true);
         } else if (text_3_4.isFocused()) {
             text_3_4.setText(letra);
             text_3_5.requestFocus();
+            text_3_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_3_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_3_4.setEditable(false);
+            text_3_5.setEditable(true);
         } else if (text_3_5.isFocused()) {
             text_3_5.setText(letra);
         } else if (text_4_1.isFocused()) {
             text_4_1.setText(letra);
             text_4_2.requestFocus();
+            text_4_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_4_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_4_1.setEditable(false);
+            text_4_2.setEditable(true);
         } else if (text_4_2.isFocused()) {
             text_4_2.setText(letra);
             text_4_3.requestFocus();
+            text_4_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_4_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_4_2.setEditable(false);
+            text_4_3.setEditable(true);
         } else if (text_4_3.isFocused()) {
             text_4_3.setText(letra);
             text_4_4.requestFocus();
+            text_4_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_4_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_4_3.setEditable(false);
+            text_4_4.setEditable(true);
         } else if (text_4_4.isFocused()) {
             text_4_4.setText(letra);
             text_4_5.requestFocus();
+            text_4_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_4_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_4_4.setEditable(false);
+            text_4_5.setEditable(true);
         } else if (text_4_5.isFocused()) {
             text_4_5.setText(letra);
         } else if (text_5_1.isFocused()) {
             text_5_1.setText(letra);
             text_5_2.requestFocus();
+            text_5_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_5_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_5_1.setEditable(false);
+            text_5_2.setEditable(true);
         } else if (text_5_2.isFocused()) {
             text_5_2.setText(letra);
             text_5_3.requestFocus();
+            text_5_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_5_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_5_2.setEditable(false);
+            text_5_3.setEditable(true);
         } else if (text_5_3.isFocused()) {
             text_5_3.setText(letra);
             text_5_4.requestFocus();
+            text_5_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_5_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_5_3.setEditable(false);
+            text_5_4.setEditable(true);
         } else if (text_5_4.isFocused()) {
             text_5_4.setText(letra);
             text_5_5.requestFocus();
+            text_5_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_5_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_5_4.setEditable(false);
+            text_5_5.setEditable(true);
         } else if (text_5_5.isFocused()) {
             text_5_5.setText(letra);
         } else if (text_6_1.isFocused()) {
             text_6_1.setText(letra);
             text_6_2.requestFocus();
+            text_6_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_6_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_6_1.setEditable(false);
+            text_6_2.setEditable(true);
         } else if (text_6_2.isFocused()) {
             text_6_2.setText(letra);
             text_6_3.requestFocus();
+            text_6_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_6_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_6_2.setEditable(false);
+            text_6_3.setEditable(true);
         } else if (text_6_3.isFocused()) {
             text_6_3.setText(letra);
             text_6_4.requestFocus();
+            text_6_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_6_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_6_3.setEditable(false);
+            text_6_4.setEditable(true);
         } else if (text_6_4.isFocused()) {
             text_6_4.setText(letra);
             text_6_5.requestFocus();
+            text_6_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_6_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            text_6_4.setEditable(false);
+            text_6_5.setEditable(true);
         } else if (text_6_5.isFocused()) {
             text_6_5.setText(letra);
         }

@@ -400,12 +400,12 @@
             </ToolBar>
             <Pane fx:id="victoria" layoutX="21.0" layoutY="121.0" prefHeight="317.0" prefWidth="530.0" style="-fx-background-color: black;" visible="false">
                <children>
-                  <Label layoutX="23.0" layoutY="23.0" text="ACERTASTE" textFill="#6aaa64">
+                  <Label layoutX="23.0" layoutY="33.0" text="ACERTASTE" textFill="#6aaa64">
                      <font>
                         <Font name="Arial Black" size="72.0" />
                      </font>
                   </Label>
-                  <Label fx:id="def" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="138.0" prefHeight="144.0" prefWidth="365.0" textAlignment="CENTER" textFill="WHITE">
+                  <Label fx:id="def" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="146.0" prefHeight="112.0" prefWidth="365.0" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="36.0" />
                      </font>
