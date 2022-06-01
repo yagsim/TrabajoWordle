@@ -3,6 +3,7 @@ package com.example.trabajowordle;
 
 import com.example.funciones.Funciones;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToolBar;
 import javafx.scene.input.KeyEvent;
@@ -49,6 +50,10 @@ public class WordleController {
     public Button btn_msg_db;
     public Button btn_msg_long;
     public Pane pane;
+    public Pane victoria;
+    public Pane derrota;
+    public Label def;
+    public Label msg_derr;
 
 
     public void typeTextF1_1(KeyEvent evt) {
@@ -65,7 +70,8 @@ public class WordleController {
     }
     public void typeTextF1_5(KeyEvent evt) {
         Funciones.inputTxtField(text_1_4, text_1_5, text_2_1, evt, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+        Funciones.victoria(text_1_1, text_1_2, text_1_3, text_1_4, text_1_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF2_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_2_1, text_2_1, text_2_2, evt);
@@ -81,7 +87,8 @@ public class WordleController {
     }
     public void typeTextF2_5(KeyEvent evt) {
         Funciones.inputTxtField(text_2_4, text_2_5, text_3_1, evt, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+        Funciones.victoria(text_2_1, text_2_2, text_2_3, text_2_4, text_2_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF3_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_3_1, text_3_1, text_3_2, evt);
@@ -97,7 +104,8 @@ public class WordleController {
     }
     public void typeTextF3_5( KeyEvent evt) {
         Funciones.inputTxtField(text_3_4, text_3_5, text_4_1, evt, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+        Funciones.victoria(text_3_1, text_3_2, text_3_3, text_3_4, text_3_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF4_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_4_1, text_4_1, text_4_2, evt);
@@ -113,7 +121,8 @@ public class WordleController {
     }
     public void typeTextF4_5(KeyEvent evt) {
         Funciones.inputTxtField(text_4_4, text_4_5, text_5_1, evt, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+        Funciones.victoria(text_4_1, text_4_2, text_4_3, text_4_4, text_4_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF5_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_5_1, text_5_1, text_5_2, evt);
@@ -129,7 +138,8 @@ public class WordleController {
     }
     public void typeTextF5_5(KeyEvent evt) {
         Funciones.inputTxtField(text_5_4, text_5_5, text_6_1, evt, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+        Funciones.victoria(text_5_1, text_5_2, text_5_3, text_5_4, text_5_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF6_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_6_1, text_6_1, text_6_2, evt);
@@ -145,7 +155,8 @@ public class WordleController {
     }
     public void typeTextF6_5(KeyEvent evt) {
         Funciones.inputTxtField(text_6_4, text_6_5, text_6_5, evt, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+        Funciones.victoria(text_6_1, text_6_2, text_6_3, text_6_4, text_6_5, victoria, def, grid_textF, grid_btn);
     }
 
     public void btnQ(){

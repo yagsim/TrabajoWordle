@@ -2,11 +2,14 @@ package com.example.funciones;
 
 import com.example.conexion.Conector;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToolBar;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,13 +24,30 @@ public class Funciones {
         return palabras.get(randomitem);
     }
 
-    public static void victoria(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+    public static void victoria(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
+                                Pane pane_vic, Label def, GridPane grid_tf, GridPane grid_btn) {
         if (tf1.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf2.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf3.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf4.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf5.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")) {
-
+            grid_btn.setDisable(true);
+            grid_tf.setDisable(true);
+            def.setText(Funciones.pAleatoria);
+            pane_vic.setVisible(true);
+        }
+    }
+    public static void derrota(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
+                                Pane pane_derr, Label msg, GridPane grid_tf, GridPane grid_btn) {
+        if (!tf1.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf2.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf3.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf4.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
+                !tf5.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")) {
+            grid_btn.setDisable(true);
+            grid_tf.setDisable(true);
+            msg.setText("La palabra era:\n" + Funciones.pAleatoria);
+            pane_derr.setVisible(true);
         }
     }
 
@@ -61,13 +81,17 @@ public class Funciones {
     }
     public static void inputTxtField(TextField anterior, TextField actual, TextField siguiente, KeyEvent evt,
                                      TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
-                                     ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grid_textF, GridPane grid_btn) {
+                                     ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grid_textF, GridPane grid_btn,
+                                     Pane derrota, Label msg_derr) {
         if (evt.getCode() == KeyCode.ENTER) {
             actual.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             siguiente.requestFocus();
             siguiente.setEditable(true);
             siguiente.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
             Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, tf1, tf2, tf3, tf4, tf5);
+            if (actual.getId().equals("text_6_5")) {
+                Funciones.derrota(tf1, tf2, tf3, tf4, tf5, derrota, msg_derr, grid_textF, grid_btn);
+            }
         } else {
             if (evt.getCode() == KeyCode.BACK_SPACE) {
                 if (actual.getText().equals("")) {
