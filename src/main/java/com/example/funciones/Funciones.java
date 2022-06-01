@@ -24,7 +24,7 @@ public class Funciones {
         return randomElement;
     }
 
-    public static void validar(String aleatoria, ToolBar msg_db, Button btn_msg_db, GridPane grdTF, GridPane grdBtn, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+    public static void validar(String aleatoria,Button q,Button w,Button e,Button r,Button t,Button y,Button u,Button i ,Button o,Button p ,Button a,Button s,Button d,Button f,Button g,Button h,Button j,Button k,Button l,Button ñ , Button z,Button x,Button c,Button v,Button b,Button n,Button m,  ToolBar msg_db, Button btn_msg_db, GridPane grdTF, GridPane grdBtn, TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
         String test = tf1.getText() + tf2.getText() + tf3.getText() + tf4.getText() + tf5.getText();
         char letra1 = tf1.getText().charAt(0);
         char letra2 = tf2.getText().charAt(0);
@@ -32,23 +32,23 @@ public class Funciones {
         char letra4 = tf4.getText().charAt(0);
         char letra5 = tf5.getText().charAt(0);
         int cont1 = 0;
-        for (int i = 0; i < aleatoria.length(); i++) {
-            if (aleatoria.charAt(i) == letra1)
+        for (int is = 0; is < aleatoria.length(); is++) {
+            if (aleatoria.charAt(is) == letra1)
                 cont1++;
         }
         int cont2 = 0;
-        for (int i = 0; i < aleatoria.length(); i++) {
-            if (aleatoria.charAt(i) == letra2)
+        for (int is = 0; is < aleatoria.length(); is++) {
+            if (aleatoria.charAt(is) == letra2)
                 cont2++;
         }
         int cont3 = 0;
-        for (int i = 0; i < aleatoria.length(); i++) {
-            if (aleatoria.charAt(i) == letra3)
+        for (int is = 0; is < aleatoria.length(); is++) {
+            if (aleatoria.charAt(is) == letra3)
                 cont3++;
         }
         int cont4 = 0;
-        for (int i = 0; i < aleatoria.length(); i++) {
-            if (aleatoria.charAt(i) == letra4)
+        for (int is = 0; is < aleatoria.length(); is++) {
+            if (aleatoria.charAt(is) == letra4)
                 cont4++;
         }
         if (cn.comprobar(test)==false) {
@@ -134,8 +134,16 @@ public class Funciones {
                     if (letra5==letra1 || letra5==letra2 || letra5==letra3 || letra5==letra4) {
                         if (cont1 > 1 || cont2 > 1 || cont3 > 1 || cont4 > 1)
                             tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            q.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                            a.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                     } else {
                         tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
+                    }
+                    if(aleatoria.charAt(4)==tf5.getText().charAt(0)){
+                        q.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                        a.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                        s.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                        o.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     }
                 }
                 tf1.setEditable(false);

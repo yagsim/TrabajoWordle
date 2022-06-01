@@ -43,6 +43,7 @@ public class WordleController {
     public TextField text_6_3;
     public TextField text_6_4;
     public TextField text_6_5;
+    public Button q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m;
     public GridPane grid_textF;
     public GridPane grid_btn;
     public ToolBar msg_db;
@@ -97,7 +98,7 @@ public class WordleController {
     public void typeTextF1_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
             text_2_1.requestFocus();
-            Funciones.validar(Funciones.pAleatoria, msg_db, btn_msg_db, grid_textF, grid_btn, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5);
+            Funciones.validar(Funciones.pAleatoria,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b, n, m , msg_db, btn_msg_db, grid_textF, grid_btn, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5);
         } else if (evt.getCode() == KeyCode.BACK_SPACE) {
             if (text_1_5.getText().isEmpty()) {
                 text_1_4.requestFocus();
@@ -157,7 +158,7 @@ public class WordleController {
     public void typeTextF2_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
             text_3_1.requestFocus();
-            Funciones.validar(Funciones.pAleatoria, msg_db, btn_msg_db, grid_textF, grid_btn, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5);
+            Funciones.validar(Funciones.pAleatoria,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b, n, m , msg_db, btn_msg_db, grid_textF, grid_btn, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5);
         } else if (evt.getCode() == KeyCode.BACK_SPACE) {
             if (text_2_5.getText().isEmpty()) {
                 text_2_4.requestFocus();
@@ -215,7 +216,7 @@ public class WordleController {
     public void typeTextF3_5( KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
             text_4_1.requestFocus();
-            Funciones.validar(Funciones.pAleatoria, msg_db, btn_msg_db, grid_textF, grid_btn, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5);
+            Funciones.validar(Funciones.pAleatoria,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b, n, m , msg_db, btn_msg_db, grid_textF, grid_btn, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5);
         } else if (evt.getCode() == KeyCode.BACK_SPACE) {
             if (text_3_5.getText().isEmpty()) {
                 text_3_4.requestFocus();
@@ -273,7 +274,7 @@ public class WordleController {
     public void typeTextF4_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
             text_5_1.requestFocus();
-            Funciones.validar(Funciones.pAleatoria, msg_db, btn_msg_db, grid_textF, grid_btn, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5);
+            Funciones.validar(Funciones.pAleatoria,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b, n, m , msg_db, btn_msg_db, grid_textF, grid_btn, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5);
         } else if (evt.getCode() == KeyCode.BACK_SPACE) {
             if (text_4_5.getText().isEmpty()) {
                 text_4_4.requestFocus();
@@ -332,7 +333,7 @@ public class WordleController {
     public void typeTextF5_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
             text_6_1.requestFocus();
-            Funciones.validar(Funciones.pAleatoria,msg_db, btn_msg_db, grid_textF, grid_btn, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5);
+            Funciones.validar(Funciones.pAleatoria,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b, n, m ,msg_db, btn_msg_db, grid_textF, grid_btn, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5);
         } else if (evt.getCode() == KeyCode.BACK_SPACE) {
             if (text_5_5.getText().isEmpty()) {
                 text_5_4.requestFocus();
@@ -389,7 +390,7 @@ public class WordleController {
     }
     public void typeTextF6_5(KeyEvent evt) {
         if (evt.getCode() == KeyCode.ENTER) {
-            Funciones.validar(Funciones.pAleatoria, msg_db, btn_msg_db, grid_textF, grid_btn, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5);
+            Funciones.validar(Funciones.pAleatoria,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b, n, m , msg_db, btn_msg_db, grid_textF, grid_btn, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5);
         } else if (evt.getCode() == KeyCode.BACK_SPACE) {
             if (text_6_5.getText().isEmpty()) {
                 text_6_4.requestFocus();
