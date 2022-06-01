@@ -21,6 +21,16 @@ public class Funciones {
         return palabras.get(randomitem);
     }
 
+    public static void victoria(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5) {
+        if (tf1.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
+         tf2.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
+         tf3.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
+         tf4.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
+         tf5.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")) {
+
+        }
+    }
+
     public static void ctrlTxtField(TextField anterior, TextField actual, TextField siguiente, KeyEvent evt) {
         if (evt.getCode() == KeyCode.BACK_SPACE) {
             if (actual.getText().equals("")) {

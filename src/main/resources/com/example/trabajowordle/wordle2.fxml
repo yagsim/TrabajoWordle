@@ -398,6 +398,7 @@
                   </VBox>
                </items>
             </ToolBar>
+            <Pane layoutX="22.0" layoutY="133.0" prefHeight="245.0" prefWidth="525.0" style="-fx-background-color: black;" />
 
             </children>
         </Pane>
