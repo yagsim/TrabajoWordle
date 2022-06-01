@@ -13,7 +13,7 @@ import java.util.Random;
 public class Funciones {
 
     private static final Conector CN = Conector.getInstancia();
-    public static String pAleatoria = "SALAR";//Funciones.aleatorio(CN.select());
+    public static String pAleatoria = Funciones.aleatorio(CN.select());
 
     public static String aleatorio(ArrayList<String> palabras){
         Random ran = new Random();
@@ -123,8 +123,8 @@ public class Funciones {
                 if (aleatoria.charAt(i) == letra5)
                     cont5++;
             }
-            boolean xx = false;
-            if (xx == true) {
+
+            if (!CN.comprobar(test)) {
                 msg_db.setVisible(true);
                 grdBtn.setDisable(true);
                 grdTF.setDisable(true);
@@ -228,6 +228,133 @@ public class Funciones {
         }
         CN.close();
     }
+    public static void eliminar(TextField text_1_1,TextField text_1_2,TextField text_1_3,TextField text_1_4,TextField text_1_5,
+                                TextField text_2_1,TextField text_2_2,TextField text_2_3,TextField text_2_4,TextField text_2_5
+                               ) {
+        if (text_1_1.isFocused()) {
+            if (text_1_1.getText().equals("")) {
+                text_1_1.setEditable(false);
+                text_1_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_1_1.setEditable(true);
+                text_1_1.setText("");
+                text_1_1.requestFocus();
+                text_1_1.deselect();
+                text_1_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_1_1.setText("");
+            }
+        } else if (text_1_2.isFocused()) {
+            if (text_1_2.getText().equals("")) {
+                text_1_2.setEditable(false);
+                text_1_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_1_1.setEditable(true);
+                text_1_1.setText("");
+                text_1_1.requestFocus();
+                text_1_1.deselect();
+                text_1_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_1_2.setText("");
+            }
+        } else if (text_1_3.isFocused()) {
+            if (text_1_3.getText().equals("")){
+            text_1_3.setEditable(false);
+            text_1_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_1_2.setEditable(true);
+            text_1_2.setText("");
+            text_1_2.requestFocus();
+            text_1_2.deselect();
+            text_1_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+        } else {
+            text_1_3.setText("");
+        }
+    }else if (text_1_4.isFocused()) {
+            if (text_1_4.getText().equals("")) {
+                text_1_4.setEditable(false);
+                text_1_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_1_3.setEditable(true);
+                text_1_3.setText("");
+                text_1_3.requestFocus();
+                text_1_3.deselect();
+                text_1_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_1_4.setText("");
+            }
+        }else if (text_1_5.isFocused()) {
+            if (text_1_5.getText().equals("")) {
+                text_1_5.setEditable(false);
+                text_1_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_1_4.setEditable(true);
+                text_1_4.setText("");
+                text_1_4.requestFocus();
+                text_1_4.deselect();
+                text_1_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_1_5.setText("");
+            }
+        }
+        if (text_2_1.isFocused()) {
+            if (text_2_1.getText().equals("")) {
+                text_2_1.setEditable(false);
+                text_2_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_2_1.setEditable(true);
+                text_2_1.setText("");
+                text_2_1.requestFocus();
+                text_2_1.deselect();
+                text_2_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_2_1.setText("");
+            }
+        } else if (text_2_2.isFocused()) {
+            if (text_2_2.getText().equals("")) {
+                text_2_2.setEditable(false);
+                text_2_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_2_1.setEditable(true);
+                text_2_1.setText("");
+                text_2_1.requestFocus();
+                text_2_1.deselect();
+                text_2_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_2_2.setText("");
+            }
+        } else if (text_2_3.isFocused()) {
+            if (text_2_3.getText().equals("")){
+                text_2_3.setEditable(false);
+                text_2_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_2_2.setEditable(true);
+                text_2_2.setText("");
+                text_2_2.requestFocus();
+                text_2_2.deselect();
+                text_2_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_2_3.setText("");
+            }
+        }else if (text_2_4.isFocused()) {
+            if (text_2_4.getText().equals("")) {
+                text_2_4.setEditable(false);
+                text_2_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_2_3.setEditable(true);
+                text_2_3.setText("");
+                text_2_3.requestFocus();
+                text_2_3.deselect();
+                text_2_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_2_4.setText("");
+            }
+        }else if (text_2_5.isFocused()) {
+            if (text_2_5.getText().equals("")) {
+                text_2_5.setEditable(false);
+                text_2_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_2_4.setEditable(true);
+                text_2_4.setText("");
+                text_2_4.requestFocus();
+                text_2_4.deselect();
+                text_2_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_2_5.setText("");
+            }
+        }
+    }
+
     public static void botonTeclado(String letra,TextField text_1_1,TextField text_1_2,TextField text_1_3,TextField text_1_4,TextField text_1_5,
                              TextField text_2_1,TextField text_2_2,TextField text_2_3,TextField text_2_4,TextField text_2_5,
                              TextField text_3_1,TextField text_3_2,TextField text_3_3,TextField text_3_4 ,TextField text_3_5,

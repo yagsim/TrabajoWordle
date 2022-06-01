@@ -365,6 +365,10 @@ public class WordleController {
                 text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
                 text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
     }
+    public void btnDel(){
+        Funciones.eliminar(text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5);
+    }
 
     public void btnMsgDB() {
         msg_db.setVisible(false);
