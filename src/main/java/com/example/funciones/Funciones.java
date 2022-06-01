@@ -185,6 +185,11 @@ public class Funciones {
                     tf3.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     tf4.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     tf5.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+                    Funciones.botonPista(tf1, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
+                    Funciones.botonPista(tf2, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
+                    Funciones.botonPista(tf3, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
+                    Funciones.botonPista(tf4, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
+                    Funciones.botonPista(tf5, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
                 } else {
                     if (aleatoria.charAt(0) == letra1) {
                         tf1.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
