@@ -49,6 +49,7 @@ public class WordleController {
     public ToolBar msg_long;
     public Button btn_msg_db;
     public Button btn_msg_long;
+    public Button q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m;
     public Pane pane;
     public Pane victoria;
     public Pane derrota;
@@ -70,7 +71,7 @@ public class WordleController {
     }
     public void typeTextF1_5(KeyEvent evt) {
         Funciones.inputTxtField(text_1_4, text_1_5, text_2_1, evt, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
         Funciones.victoria(text_1_1, text_1_2, text_1_3, text_1_4, text_1_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF2_1(KeyEvent evt) {
@@ -87,7 +88,7 @@ public class WordleController {
     }
     public void typeTextF2_5(KeyEvent evt) {
         Funciones.inputTxtField(text_2_4, text_2_5, text_3_1, evt, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
         Funciones.victoria(text_2_1, text_2_2, text_2_3, text_2_4, text_2_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF3_1(KeyEvent evt) {
@@ -104,7 +105,7 @@ public class WordleController {
     }
     public void typeTextF3_5( KeyEvent evt) {
         Funciones.inputTxtField(text_3_4, text_3_5, text_4_1, evt, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
         Funciones.victoria(text_3_1, text_3_2, text_3_3, text_3_4, text_3_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF4_1(KeyEvent evt) {
@@ -121,7 +122,7 @@ public class WordleController {
     }
     public void typeTextF4_5(KeyEvent evt) {
         Funciones.inputTxtField(text_4_4, text_4_5, text_5_1, evt, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
         Funciones.victoria(text_4_1, text_4_2, text_4_3, text_4_4, text_4_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF5_1(KeyEvent evt) {
@@ -138,7 +139,7 @@ public class WordleController {
     }
     public void typeTextF5_5(KeyEvent evt) {
         Funciones.inputTxtField(text_5_4, text_5_5, text_6_1, evt, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
         Funciones.victoria(text_5_1, text_5_2, text_5_3, text_5_4, text_5_5, victoria, def, grid_textF, grid_btn);
     }
     public void typeTextF6_1(KeyEvent evt) {
@@ -155,7 +156,7 @@ public class WordleController {
     }
     public void typeTextF6_5(KeyEvent evt) {
         Funciones.inputTxtField(text_6_4, text_6_5, text_6_5, evt, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5,
-                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr);
+                msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, derrota, msg_derr, q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
         Funciones.victoria(text_6_1, text_6_2, text_6_3, text_6_4, text_6_5, victoria, def, grid_textF, grid_btn);
     }
 
@@ -439,6 +440,6 @@ public class WordleController {
                 text_5_1,text_5_2, text_5_3,text_5_4 ,text_5_5,
                 text_6_1, text_6_2,text_6_3,text_6_4 , text_6_5,
                  msg_db, msg_long,  btn_msg_long,btn_msg_db,grid_textF,grid_btn,
-                victoria, def, derrota, msg_derr);
+                victoria, def, derrota, msg_derr,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,ñ,z,x,c,v,b,n,m);
         }
 }
