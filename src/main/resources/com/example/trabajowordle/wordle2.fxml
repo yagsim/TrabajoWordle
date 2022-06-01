@@ -341,7 +341,7 @@
                         <Insets bottom="3.0" right="3.0" top="7.0" />
                      </GridPane.margin>
                    </Button>
-                  <Button fx:id="intro" alignment="CENTER" contentDisplay="RIGHT" focusTraversable="false" layoutX="386.0" layoutY="116.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: C0C0C0FF;" text="Enter" textAlignment="JUSTIFY" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                  <Button fx:id="intro" alignment="CENTER" contentDisplay="RIGHT" focusTraversable="false" layoutX="386.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnIntro" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: C0C0C0FF;" text="Enter" textAlignment="JUSTIFY" GridPane.columnIndex="9" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="10.0" />
                      </font>

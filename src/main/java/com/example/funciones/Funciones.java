@@ -238,8 +238,13 @@ public class Funciones {
         }
         CN.close();
     }
+
     public static void eliminar(TextField text_1_1,TextField text_1_2,TextField text_1_3,TextField text_1_4,TextField text_1_5,
-                                TextField text_2_1,TextField text_2_2,TextField text_2_3,TextField text_2_4,TextField text_2_5
+                                TextField text_2_1,TextField text_2_2,TextField text_2_3,TextField text_2_4,TextField text_2_5,
+                                TextField text_3_1,TextField text_3_2,TextField text_3_3,TextField text_3_4 ,TextField text_3_5,
+                                TextField text_4_1, TextField text_4_2,TextField text_4_3,TextField text_4_4 ,TextField text_4_5,
+                                TextField text_5_1,TextField text_5_2,TextField text_5_3,TextField text_5_4 ,TextField text_5_5,
+                                TextField text_6_1,TextField text_6_2,TextField text_6_3,TextField text_6_4 ,TextField text_6_5
                                ) {
         if (text_1_1.isFocused()) {
             if (text_1_1.getText().equals("")) {
@@ -362,6 +367,300 @@ public class Funciones {
             } else {
                 text_2_5.setText("");
             }
+        }
+        if (text_3_1.isFocused()) {
+            if (text_3_1.getText().equals("")) {
+                text_3_1.setEditable(false);
+                text_3_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_3_1.setEditable(true);
+                text_3_1.setText("");
+                text_3_1.requestFocus();
+                text_3_1.deselect();
+                text_3_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_3_1.setText("");
+            }
+        } else if (text_3_2.isFocused()) {
+            if (text_3_2.getText().equals("")) {
+                text_3_2.setEditable(false);
+                text_3_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_3_1.setEditable(true);
+                text_3_1.setText("");
+                text_3_1.requestFocus();
+                text_3_1.deselect();
+                text_3_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_3_2.setText("");
+            }
+        } else if (text_3_3.isFocused()) {
+            if (text_3_3.getText().equals("")){
+                text_3_3.setEditable(false);
+                text_3_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_3_2.setEditable(true);
+                text_3_2.setText("");
+                text_3_2.requestFocus();
+                text_3_2.deselect();
+                text_3_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_3_3.setText("");
+            }
+        }else if (text_3_4.isFocused()) {
+            if (text_3_4.getText().equals("")) {
+                text_3_4.setEditable(false);
+                text_3_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_3_3.setEditable(true);
+                text_3_3.setText("");
+                text_3_3.requestFocus();
+                text_3_3.deselect();
+                text_3_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_3_4.setText("");
+            }
+        }else if (text_3_5.isFocused()) {
+            if (text_3_5.getText().equals("")) {
+                text_3_5.setEditable(false);
+                text_3_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_3_4.setEditable(true);
+                text_3_4.setText("");
+                text_3_4.requestFocus();
+                text_3_4.deselect();
+                text_3_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_3_5.setText("");
+            }
+        }
+        if (text_4_1.isFocused()) {
+            if (text_4_1.getText().equals("")) {
+                text_4_1.setEditable(false);
+                text_4_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_4_1.setEditable(true);
+                text_4_1.setText("");
+                text_4_1.requestFocus();
+                text_4_1.deselect();
+                text_4_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_4_1.setText("");
+            }
+        } else if (text_4_2.isFocused()) {
+            if (text_4_2.getText().equals("")) {
+                text_4_2.setEditable(false);
+                text_4_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_4_1.setEditable(true);
+                text_4_1.setText("");
+                text_4_1.requestFocus();
+                text_4_1.deselect();
+                text_4_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_4_2.setText("");
+            }
+        } else if (text_4_3.isFocused()) {
+            if (text_4_3.getText().equals("")){
+                text_4_3.setEditable(false);
+                text_4_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_4_2.setEditable(true);
+                text_4_2.setText("");
+                text_4_2.requestFocus();
+                text_4_2.deselect();
+                text_4_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_4_3.setText("");
+            }
+        }else if (text_4_4.isFocused()) {
+            if (text_4_4.getText().equals("")) {
+                text_4_4.setEditable(false);
+                text_4_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_4_3.setEditable(true);
+                text_4_3.setText("");
+                text_4_3.requestFocus();
+                text_4_3.deselect();
+                text_4_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_4_4.setText("");
+            }
+        }else if (text_4_5.isFocused()) {
+            if (text_4_5.getText().equals("")) {
+                text_4_5.setEditable(false);
+                text_4_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_4_4.setEditable(true);
+                text_4_4.setText("");
+                text_4_4.requestFocus();
+                text_4_4.deselect();
+                text_4_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_4_5.setText("");
+            }
+        }
+        if (text_5_1.isFocused()) {
+            if (text_5_1.getText().equals("")) {
+                text_5_1.setEditable(false);
+                text_5_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_5_1.setEditable(true);
+                text_5_1.setText("");
+                text_5_1.requestFocus();
+                text_5_1.deselect();
+                text_5_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_5_1.setText("");
+            }
+        } else if (text_5_2.isFocused()) {
+            if (text_5_2.getText().equals("")) {
+                text_5_2.setEditable(false);
+                text_5_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_5_1.setEditable(true);
+                text_5_1.setText("");
+                text_5_1.requestFocus();
+                text_5_1.deselect();
+                text_5_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_5_2.setText("");
+            }
+        } else if (text_5_3.isFocused()) {
+            if (text_5_3.getText().equals("")){
+                text_5_3.setEditable(false);
+                text_5_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_5_2.setEditable(true);
+                text_5_2.setText("");
+                text_5_2.requestFocus();
+                text_5_2.deselect();
+                text_5_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_5_3.setText("");
+            }
+        }else if (text_5_4.isFocused()) {
+            if (text_5_4.getText().equals("")) {
+                text_5_4.setEditable(false);
+                text_5_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_5_3.setEditable(true);
+                text_5_3.setText("");
+                text_5_3.requestFocus();
+                text_5_3.deselect();
+                text_5_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_5_4.setText("");
+            }
+        }else if (text_5_5.isFocused()) {
+            if (text_5_5.getText().equals("")) {
+                text_5_5.setEditable(false);
+                text_5_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_5_4.setEditable(true);
+                text_5_4.setText("");
+                text_5_4.requestFocus();
+                text_5_4.deselect();
+                text_5_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_5_5.setText("");
+            }
+        }
+        if (text_6_1.isFocused()) {
+            if (text_6_1.getText().equals("")) {
+                text_6_1.setEditable(false);
+                text_6_1.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_6_1.setEditable(true);
+                text_6_1.setText("");
+                text_6_1.requestFocus();
+                text_6_1.deselect();
+                text_6_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_6_1.setText("");
+            }
+        } else if (text_6_2.isFocused()) {
+            if (text_6_2.getText().equals("")) {
+                text_6_2.setEditable(false);
+                text_6_2.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_6_1.setEditable(true);
+                text_6_1.setText("");
+                text_6_1.requestFocus();
+                text_6_1.deselect();
+                text_6_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_6_2.setText("");
+            }
+        } else if (text_6_3.isFocused()) {
+            if (text_6_3.getText().equals("")){
+                text_6_3.setEditable(false);
+                text_6_3.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_6_2.setEditable(true);
+                text_6_2.setText("");
+                text_6_2.requestFocus();
+                text_6_2.deselect();
+                text_6_2.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_6_3.setText("");
+            }
+        }else if (text_6_4.isFocused()) {
+            if (text_6_4.getText().equals("")) {
+                text_6_4.setEditable(false);
+                text_6_4.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_6_3.setEditable(true);
+                text_6_3.setText("");
+                text_6_3.requestFocus();
+                text_6_3.deselect();
+                text_6_3.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_6_4.setText("");
+            }
+        }else if (text_6_5.isFocused()) {
+            if (text_6_5.getText().equals("")) {
+                text_6_5.setEditable(false);
+                text_6_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+                text_6_4.setEditable(true);
+                text_6_4.setText("");
+                text_6_4.requestFocus();
+                text_6_4.deselect();
+                text_6_4.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            } else {
+                text_6_5.setText("");
+            }
+        }
+    }
+    public static void añadir(TextField text_1_1,TextField text_1_2,TextField text_1_3,TextField text_1_4,TextField text_1_5,
+                                TextField text_2_1,TextField text_2_2,TextField text_2_3,TextField text_2_4,TextField text_2_5,
+                                TextField text_3_1,TextField text_3_2,TextField text_3_3,TextField text_3_4 ,TextField text_3_5,
+                                TextField text_4_1, TextField text_4_2,TextField text_4_3,TextField text_4_4 ,TextField text_4_5,
+                                TextField text_5_1,TextField text_5_2,TextField text_5_3,TextField text_5_4 ,TextField text_5_5,
+                                TextField text_6_1,TextField text_6_2,TextField text_6_3,TextField text_6_4 ,TextField text_6_5,
+                              ToolBar msg_db, ToolBar msg_long, Button btn_msg_long, Button btn_msg_db, GridPane grid_textF, GridPane grid_btn) {
+        if (text_1_5.isFocused()) {
+            text_1_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_2_1.requestFocus();
+            text_2_1.setEditable(true);
+            text_2_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_1_1, text_1_2, text_1_3, text_1_4, text_1_5);
+        }
+        if (text_2_5.isFocused()) {
+            text_2_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_3_1.requestFocus();
+            text_3_1.setEditable(true);
+            text_3_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_2_1, text_2_2, text_2_3, text_2_4, text_2_5);
+        }
+        if (text_3_5.isFocused()) {
+            text_3_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_4_1.requestFocus();
+            text_4_1.setEditable(true);
+            text_4_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_3_1, text_3_2, text_3_3, text_3_4, text_3_5);
+        }
+        if (text_4_5.isFocused()) {
+            text_4_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_5_1.requestFocus();
+            text_5_1.setEditable(true);
+            text_5_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_4_1, text_4_2, text_4_3, text_4_4, text_4_5);
+        }
+        if (text_5_5.isFocused()) {
+            text_5_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_6_1.requestFocus();
+            text_6_1.setEditable(true);
+            text_6_1.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_5_1, text_5_2, text_5_3, text_5_4, text_5_5);
+        }
+        if (text_6_5.isFocused()) {
+            text_6_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
+            text_6_5.requestFocus();
+            text_6_5.setEditable(true);
+            text_6_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
+            Funciones.validar(Funciones.pAleatoria, msg_db, msg_long, btn_msg_long, btn_msg_db, grid_textF, grid_btn, text_6_1, text_6_2, text_6_3, text_6_4, text_6_5);
         }
     }
 

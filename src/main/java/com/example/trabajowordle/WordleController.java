@@ -367,7 +367,11 @@ public class WordleController {
     }
     public void btnDel(){
         Funciones.eliminar(text_1_1,text_1_2,text_1_3,text_1_4,text_1_5,
-                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5);
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1,text_3_2,text_3_3,text_3_4,text_3_5,
+                text_4_1,text_4_2,text_4_3,text_4_4,text_4_5,
+                text_5_1,text_5_2,text_5_3,text_5_4,text_5_5,
+                text_6_1,text_6_2,text_6_3,text_6_4,text_6_5);
     }
 
     public void btnMsgDB() {
@@ -415,5 +419,14 @@ public class WordleController {
             text_6_5.deselect();
             text_6_5.setStyle("-fx-border-color: white; -fx-background-color: #A8A8A8FF;");
         }
+    }
+    public void btnIntro(){
+        Funciones.añadir(text_1_1,text_1_2,text_1_3,text_1_4, text_1_5,
+                text_2_1,text_2_2,text_2_3,text_2_4,text_2_5,
+                text_3_1, text_3_2,text_3_3,text_3_4 , text_3_5,
+                text_4_1,  text_4_2, text_4_3,text_4_4 ,text_4_5,
+                text_5_1,text_5_2, text_5_3,text_5_4 ,text_5_5,
+                text_6_1, text_6_2,text_6_3,text_6_4 , text_6_5,
+                 msg_db, msg_long,  btn_msg_long,btn_msg_db,grid_textF,grid_btn);
     }
 }
