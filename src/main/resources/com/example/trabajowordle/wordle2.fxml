@@ -341,28 +341,34 @@
                         <Insets bottom="3.0" right="3.0" top="7.0" />
                      </GridPane.margin>
                    </Button>
-                  <Button fx:id="intro" alignment="CENTER" contentDisplay="RIGHT" focusTraversable="false" layoutX="386.0" layoutY="116.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: C0C0C0FF;" text="enter" textAlignment="JUSTIFY" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                  <Button fx:id="intro" alignment="CENTER" contentDisplay="RIGHT" focusTraversable="false" layoutX="386.0" layoutY="116.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: C0C0C0FF;" text="Enter" textAlignment="JUSTIFY" GridPane.columnIndex="9" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="10.0" />
                      </font>
                      <GridPane.margin>
                         <Insets bottom="3.0" right="3.0" top="7.0" />
                      </GridPane.margin>
+                     <opaqueInsets>
+                        <Insets right="4.0" />
+                     </opaqueInsets>
                   </Button>
                </children>
             </GridPane>
-            <ToolBar fx:id="msg_db" focusTraversable="false" layoutX="78.0" layoutY="14.0" prefHeight="76.0" prefWidth="411.0" style="-fx-border-radius: 20%; -fx-background-color: black;" visible="false">
+            <ToolBar fx:id="msg_db" focusTraversable="false" layoutX="68.0" layoutY="14.0" prefHeight="82.0" prefWidth="427.0" style="-fx-border-radius: 20%; -fx-background-color: black;">
                <items>
-                  <VBox prefHeight="72.0" prefWidth="399.0">
+                  <VBox prefHeight="72.0" prefWidth="403.0">
                      <children>
-                        <Label alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="399.0" style="-fx-border-radius: 100; -fx-background-color: black; -fx-text-fill: white;" text="LA PALABRA NO EXISTE EN LA BASE DE DATOS" textAlignment="CENTER">
+                        <Label alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="402.0" style="-fx-border-radius: 100; -fx-background-color: black; -fx-text-fill: white;" text="LA PALABRA NO EXISTE EN LA BASE DE DATOS" textAlignment="CENTER">
                            <font>
                               <Font name="Corbel Bold" size="18.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
                         </Label>
                         <Button fx:id="btn_msg_db" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnMsgDB" prefHeight="8.0" prefWidth="34.0" style="-fx-background-color: gray;" text="OK">
                            <VBox.margin>
-                              <Insets left="180.0" top="10.0" />
+                              <Insets left="192.0" top="10.0" />
                            </VBox.margin>
                            <font>
                               <Font name="System Bold" size="12.0" />

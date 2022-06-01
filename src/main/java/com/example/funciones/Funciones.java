@@ -123,7 +123,8 @@ public class Funciones {
                 if (aleatoria.charAt(i) == letra5)
                     cont5++;
             }
-            if (!CN.comprobar(test)) {
+            boolean xx = false;
+            if (xx == true) {
                 msg_db.setVisible(true);
                 grdBtn.setDisable(true);
                 grdTF.setDisable(true);
@@ -182,8 +183,8 @@ public class Funciones {
                             } else if (cont1>1 || cont2>1 || cont3>1 || cont4>1 || cont5>1) {
                                 tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                             }
-                            }else if (letra3==letra1  || letra3==letra2 ) {
-                            if (cont1 > 1 || cont2 > 1)
+                        }else if (letra3==letra1  || letra3==letra2 ) {
+                            if (cont1 > 1 && cont2 > 1)
                                 tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         } else {
                             tf3.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
@@ -200,7 +201,7 @@ public class Funciones {
                                 tf1.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                             }
                         } else if (letra4==letra1  || letra4==letra2  || letra4==letra3) {
-                            if (cont1 > 1 || cont2 > 1 || cont3 > 1)
+                            if (cont1 > 1 && cont2 > 1 && cont3 > 1)
                                 tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         } else {
                             tf4.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
@@ -211,7 +212,7 @@ public class Funciones {
                         tf5.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
                     } else if (aleatoria.contains(("" + tf5.getText().charAt(0)))) {
                         if (letra5==letra1 || letra5==letra2 || letra5==letra3 || letra5==letra4) {
-                            if (cont1 > 1 || cont2 > 1 || cont3 > 1 || cont4 > 1)
+                            if (cont1 > 1 && cont2 > 1 && cont3 > 1 && cont4 > 1)
                                 tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
                         } else {
                             tf5.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
