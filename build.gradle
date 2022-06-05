@@ -7,6 +7,8 @@ plugins {
 group 'com.example'
 version '1.0-SNAPSHOT'
 
+
+
 repositories {
     mavenCentral()
 }
@@ -24,7 +26,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.example.trabajowordle'
-    mainClass = 'com.example.trabajowordle.HelloApplication'
+    mainClass = 'com.example.trabajowordle.Wordle'
 }
 
 javafx {

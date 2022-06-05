@@ -1,13 +1,11 @@
 package com.example.conexion;
 
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-public class Conector {
-    private final String URL = ".\\TrabajoWordleDB.db";
-    private Connection connect;
+public class Conector extends PlantillaConector {
     private static Conector instancia = null;
 
     private Conector(){}
@@ -18,22 +16,14 @@ public class Conector {
         return instancia;
     }
 
+    @Override
     public void connect() {
-        try {
-            connect = DriverManager.getConnection("jdbc:sqlite:"+URL);
-            if (connect != null) {
-                System.out.println("Conectado");
-            }
-        } catch (SQLException ex) {
-            System.err.println("No se ha podido conectar a la base de datos\n"+ex.getMessage());
-        }
+        URL = ".\\TrabajoWordleDB.db";
+        super.connect();
     }
+    @Override
     public void close() {
-        try {
-            connect.close();
-        } catch (SQLException ex) {
-            Logger.getLogger(Conector.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        super.close();
     }
 
     public void vertirStringaBD(String datos)  {
