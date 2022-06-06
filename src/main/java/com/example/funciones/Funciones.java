@@ -26,6 +26,8 @@ public class Funciones {
 
     public static void victoria(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
                                 Pane pane_vic, Label def, GridPane grid_tf, GridPane grid_btn) {
+        //método con el que mostramos un mensaje si adivinas la palabra debera ser llamado en los últimos textFields de cada intento
+        //si todas las posiciones estan en verde mostramos el paneVic que esta en oculto
         if (tf1.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf2.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
          tf3.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") &&
@@ -39,6 +41,8 @@ public class Funciones {
     }
     public static void derrota(TextField tf1, TextField tf2, TextField tf3, TextField tf4, TextField tf5,
                                 Pane pane_derr, Label msg, GridPane grid_tf, GridPane grid_btn) {
+        //método con el que mostramos el panel de derrota si en los 6 intentos no consigues adivinar la palabra y muestra la palabra
+        //si los textFields son distintos a verde muestra el paneDerr oculto
         if (!tf1.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
                 !tf2.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
                 !tf3.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;") ||
@@ -53,6 +57,7 @@ public class Funciones {
 
     public static void ctrlTxtField(TextField anterior, TextField actual, TextField siguiente, KeyEvent evt) {
         if (evt.getCode() == KeyCode.BACK_SPACE) {
+            //método para controlar las posiciones en caso de borrar
             if (actual.getText().equals("")) {
                 actual.setEditable(false);
                 actual.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
@@ -85,6 +90,7 @@ public class Funciones {
                                      Pane derrota, Label msg_derr, Button q, Button w, Button e, Button r, Button t, Button y, Button u, Button i,
                                      Button o, Button p, Button a, Button s, Button d, Button f, Button g, Button h, Button j, Button k,
                                      Button l, Button ñ, Button z, Button x, Button c, Button v, Button b, Button n, Button m) {
+        //método para que no puedas introducir una letra en el textField que no le pertenece
         if (evt.getCode() == KeyCode.ENTER) {
             actual.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             siguiente.requestFocus();
@@ -125,6 +131,7 @@ public class Funciones {
                                Button q, Button w, Button e, Button r, Button t, Button y, Button u, Button i,
                                Button o, Button p, Button a, Button s, Button d, Button f, Button g, Button h, Button j, Button k,
                                Button l, Button ñ, Button z, Button x, Button c, Button v, Button b, Button n, Button m) {
+        //método con el que comprobamos  si la letra se encontraba o no en la aleatoria y si se encontraba si era la posición correcta o no y si no era mostrar una pista si se localizaba en otra posición y si se encontraba en otra posición comprobar si la pista se había mostrado antes para así ya no mostrarla.
         CN.connect();
         if (tf5.getText().isEmpty()) {
             msg_long.setVisible(true);
@@ -411,6 +418,7 @@ public class Funciones {
                                 TextField text_5_1,TextField text_5_2,TextField text_5_3,TextField text_5_4 ,TextField text_5_5,
                                 TextField text_6_1,TextField text_6_2,TextField text_6_3,TextField text_6_4 ,TextField text_6_5
                                ) {
+        //método para el botón delete del teclado
         if (text_1_1.isFocused()) {
             if (text_1_1.getText().equals("")) {
                 text_1_1.setEditable(false);
@@ -788,6 +796,7 @@ public class Funciones {
                               Pane victoria, Label def, Pane derrota, Label msg_der, Button q, Button w, Button e, Button r, Button t, Button y, Button u, Button i,
                               Button o, Button p, Button a, Button s, Button d, Button f, Button g, Button h, Button j, Button k,
                               Button l, Button ñ, Button z, Button x, Button c, Button v, Button b, Button n, Button m) {
+       //método para el botón enter del teclado
         if (text_1_5.isFocused()) {
             text_1_5.setStyle("-fx-border-color: transparent; -fx-background-color: #A8A8A8FF;");
             text_2_1.requestFocus();
@@ -847,6 +856,7 @@ public class Funciones {
                              TextField text_4_1, TextField text_4_2,TextField text_4_3,TextField text_4_4 ,TextField text_4_5,
                              TextField text_5_1,TextField text_5_2,TextField text_5_3,TextField text_5_4 ,TextField text_5_5,
                              TextField text_6_1,TextField text_6_2,TextField text_6_3,TextField text_6_4 ,TextField text_6_5) {
+        //método para mostrar los botones en los textFields
         if (text_1_1.isFocused()) {
             text_1_1.setText(letra);
             text_1_2.requestFocus();
@@ -1032,6 +1042,8 @@ public class Funciones {
     public static void botonPista(TextField txt, Button q, Button w, Button e, Button r, Button t, Button y, Button u, Button i,
                                   Button o, Button p, Button a, Button s, Button d, Button f, Button g, Button h, Button j, Button k,
                                   Button l, Button ñ, Button z, Button x, Button c, Button v, Button b, Button n, Button m){
+       //método para mostrar las pistas el teclado
+        //si presionas esa letra la muestra en el textField
         if(q.getText().equals(txt.getText())){
             funcionBotonColor(txt, q);
         } else if(w.getText().equals(txt.getText())) {
@@ -1089,12 +1101,16 @@ public class Funciones {
         }
     }
     private static void funcionBotonColor(TextField txt, Button btn) {
+        //método con el que le introducimos el color de la pista correspondiente al teclado
+        //si el textField es verde muestra el botón en verde
         if(txt.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")){
             btn.setStyle("-fx-text-fill: white;-fx-background-color: #6aaa64;");
+            //si no si esta pero no en esa posición en amarillo
         }else if(txt.getStyle().equals("-fx-text-fill: white;-fx-background-color: #c9b458;")){
             if(!btn.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")) {
                 btn.setStyle("-fx-text-fill: white;-fx-background-color: #c9b458;");
             }
+            //si no esta en gris
         }else if(txt.getStyle().equals("-fx-text-fill: white;-fx-background-color: #606060;")){
             if(!btn.getStyle().equals("-fx-text-fill: white;-fx-background-color: #c9b458;")){
                 if(!btn.getStyle().equals("-fx-text-fill: white;-fx-background-color: #6aaa64;")){

@@ -41,6 +41,7 @@ public class Conector extends PlantillaConector {
     }
 
     public ArrayList<String> select(){
+        //con esrto recogemos las palabras de la base de datos
         ArrayList<String> palabras = new ArrayList<>();
         ResultSet result;
         try {
@@ -55,6 +56,7 @@ public class Conector extends PlantillaConector {
         return palabras;
     }
     public boolean comprobar(String test){
+        //comprobar si existe para el toolbar al introducir de si existe o no
         try {
             ResultSet result;
             PreparedStatement st=connect.prepareStatement("select count(*)  as count from palabras where nombre=(?)");

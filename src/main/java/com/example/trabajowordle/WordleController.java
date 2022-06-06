@@ -55,7 +55,7 @@ public class WordleController {
     public Pane derrota;
     public Label def;
     public Label msg_derr;
-
+//dar funcion  cada elemento del GUI.
 
     public void typeTextF1_1(KeyEvent evt) {
         Funciones.ctrlTxtField(text_1_1, text_1_1, text_1_2, evt);
